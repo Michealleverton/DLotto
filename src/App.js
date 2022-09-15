@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Looks like I am going to have to use a new file and commit things as I rebuild
         </a>
       </header>
     </div>
