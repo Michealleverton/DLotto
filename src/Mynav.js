@@ -30,7 +30,7 @@ async function getLocationData() {
 
   // Blacklist countries
   const blacklist_countries = [
-    // "CA", // Canada
+    "CA", // Canada
     "BS", //Bahamas 
     "BY", // Belarus
     "CH", //Switzerland
