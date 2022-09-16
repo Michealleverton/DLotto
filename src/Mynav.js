@@ -54,7 +54,7 @@ async function getLocationData() {
   if (blacklist_countries.includes(data.country)) {
     // If the visitors ip country code is in blacklist this will redirect them to the 
     // access denied page
-    window.location.href = "http://127.0.0.1:5501/index.html";
+    window.location.href = "https://restrictcustomers.netlify.app";
     // display_access_denied_error() // Access denied error
   }
 }
