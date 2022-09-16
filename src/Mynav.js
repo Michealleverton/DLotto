@@ -122,7 +122,7 @@ const Mynav = (props) => {
             <div className="ms-4">
 
               <h2 className="mt-1 mb-0 display-6 fw-bolder text-white">Decentraliz Lottery<br /></h2>
-              <p className="mt-0 mb-2 text-white textleft">The Only Crypto Lottery You Need</p>
+              <p className="mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
             </div>
             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>

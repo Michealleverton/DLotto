@@ -1,3 +1,16 @@
+:root {
+  --site-medium-blue: rgb(90, 121, 165);
+  --site-light-blue: rgb(156, 170, 198);
+  --color-b: rgb(0, 0, 0);
+  --color-w: #fff;
+  --color-r: rgb(255, 0, 0);
+  --color-y: rgb(245, 245, 9);
+  --color-g: rgb(12, 236, 12);
+  --color-b: rgb(9, 9, 245);
+  --color-a: rgb(127, 255, 212);
+  --color-p: rgb(255, 192, 203);
+}
+
 /* .googFiraSans {
     font-family: 'Fira Sans', sans-serif;
     color: whitesmoke;
@@ -8,6 +21,14 @@
   :root {
     scroll-behavior: smooth;
   }
+}
+
+.sitemediumblue {
+  color: var(--site-medium-blue);
+}
+
+.sitelightblue {
+  color: var(--site-light-blue);
 }
 
 /* .popupContainer {
