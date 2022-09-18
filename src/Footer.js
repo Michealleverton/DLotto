@@ -24,7 +24,7 @@ const Footer = () => {
       </div>
 
       <p className=" text-center text-white">
-        Copyright &copy; Decentraliz Gaming 2022 - All Rights Reserved. testing commit and push
+        Copyright &copy; Decentraliz Gaming 2022 - All Rights Reserved.
       </p>
 
     </div>
