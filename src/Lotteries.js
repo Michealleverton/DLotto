@@ -333,7 +333,7 @@ const Lotteries = () => {
 						<div className="card mb-5 mb-xl-0">
 							<div className="card-body p-5">
 								<div className="small text-primary text-uppercase fw-bold">
-									<h6 className="display-6 fs-4 text-black">Ethereum Token</h6>
+									<h6 className="display-6 fs-4 text-black">Sunday Draw</h6>
 								</div>
 								<div className="mb-3">
 									<span className="display-4 fw-bold">$1</span>
@@ -392,7 +392,7 @@ const Lotteries = () => {
 						<div className="card mb-5 mb-xl-0">
 							<div className="card-body p-5">
 								<div className="small text-primary text-uppercase fw-bold">
-									<h6 className="display-6 fs-4 text-black">Ethereum Token</h6>
+									<h6 className="display-6 fs-4 text-black">Wednesday Draw</h6>
 								</div>
 								<div className="mb-3">
 									<span className="display-4 fw-bold">$2</span>
@@ -451,7 +451,7 @@ const Lotteries = () => {
 						<div className="card mb-5 mb-xl-0">
 							<div className="card-body p-5">
 								<div className="small text-primary text-uppercase fw-bold mb-2">
-									<h6 className="display-6 fs-4 text-black">Ethereum Token 50/50 </h6>
+									<h6 className="display-6 fs-4 text-black">50/50 Fridays</h6>
 								</div>
 
 								<div className="mb-3">
