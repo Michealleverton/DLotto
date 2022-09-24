@@ -472,6 +472,11 @@ h1.outline-1 {
   border-bottom: 0.1875em solid rgb(0, 0, 0);
 }
 
+.bottomblackline1 {
+  border-bottom: 0.1em solid rgb(0, 0, 0);
+  opacity: 1;
+}
+
 .navshadow {
   box-shadow: 0 0.125em 0.25em 0 rgba(0, 0, 0, .2);
 }
@@ -690,10 +695,14 @@ a.mynavlinks:active {
   }
 }
 
+.spacebetween {
+  justify-content: space-between;
+}
+
 .btn-warning2 {
   color: #000;
   background-color: #ffc107;
-  border-color: #ffc107;
+  border-color: #000000;  
 }
 
 .btn-warning2:hover {

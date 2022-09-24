@@ -228,8 +228,8 @@ const Lotteries = () => {
 	}
 
 	return (
-		<section className="bg_grey_opacity py-3 border-bottom" id="tickets">
-			<div className="container px-5 my-5">
+		<section className="bg_grey_opacity border-bottom" id="tickets">
+			<div className="container pb-6">
 
 				{/* One dollar draw agegate popuup */}
 				<div className="popup pt-3" id="ODpopup">
@@ -321,7 +321,7 @@ const Lotteries = () => {
 				</div>
 
 				<div className="text-center mb-5">
-					<h2 className="display-5 fw-bolder text-center text-white mb-3">TICKET OPTIONS</h2>
+					<h2 className="display-5 fw-bolder text-center text-white">TICKET OPTIONS</h2>
 				</div>
 				<div className="row gx-4 justify-content-center">
 
@@ -374,10 +374,10 @@ const Lotteries = () => {
 										<i className="bi bi-check text-success iconspacing"></i>
 										100 Free $1 tickets given out
 									</li>
-									<li className="mb-2">
+									{/* <li className="mb-2">
 										<i className="bi bi-x text-danger iconspacing"></i>
 										No <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
-									</li>
+									</li> */}
 								</ul>
 								<div className="d-grid"><button type="submit" onClick={ODopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Ticket</button></div>
 							</div>
@@ -433,10 +433,10 @@ const Lotteries = () => {
 										<i className="bi bi-check text-success iconspacing"></i>
 										250 Free $2 tickets given out
 									</li>
-									<li className="mb-2">
+									{/* <li className="mb-2">
 										<i className="bi bi-gem text-primary iconspacing"></i>
 										1 <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
-									</li>
+									</li> */}
 								</ul>
 								<div className="d-grid"><button type="submit" onClick={TDopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Tickets</button></div>
 							</div>
@@ -493,10 +493,10 @@ const Lotteries = () => {
 										<i className="bi bi-check text-success iconspacing"></i>
 										500 Free $3 tickets given out
 									</li>
-									<li className="mb-2">
+									{/* <li className="mb-2">
 										<i className="bi bi-gem text-primary iconspacing"></i>
 										3 <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
-									</li>
+									</li> */}
 								</ul>
 								<div className="d-grid"><button type="submit" onClick={FFopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Ticket</button></div>
 							</div>
@@ -506,6 +506,7 @@ const Lotteries = () => {
 				</div>
 
 			</div>
+			<div className="bottomblackline1"></div>
 		</section>
 	)
 }

@@ -11,25 +11,6 @@ const ABI = [
         "anonymous": false,
         "inputs": [
             {
-                "indexed": true,
-                "internalType": "address",
-                "name": "previousOwner",
-                "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "address",
-                "name": "newOwner",
-                "type": "address"
-            }
-        ],
-        "name": "OwnershipTransferred",
-        "type": "event"
-    },
-    {
-        "anonymous": false,
-        "inputs": [
-            {
                 "indexed": false,
                 "internalType": "address",
                 "name": "account",
@@ -43,15 +24,21 @@ const ABI = [
         "anonymous": false,
         "inputs": [
             {
-                "indexed": false,
+                "indexed": true,
                 "internalType": "address",
                 "name": "_from",
                 "type": "address"
             },
             {
-                "indexed": false,
+                "indexed": true,
                 "internalType": "uint256",
                 "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_lottonum",
                 "type": "uint256"
             }
         ],
@@ -62,7 +49,7 @@ const ABI = [
         "anonymous": false,
         "inputs": [
             {
-                "indexed": false,
+                "indexed": true,
                 "internalType": "address",
                 "name": "_from",
                 "type": "address"
@@ -74,9 +61,15 @@ const ABI = [
                 "type": "address"
             },
             {
-                "indexed": false,
+                "indexed": true,
                 "internalType": "uint256",
                 "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "_lottonum",
                 "type": "uint256"
             }
         ],
@@ -291,19 +284,6 @@ const ABI = [
         "type": "function"
     },
     {
-        "inputs": [],
-        "name": "randomResult",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    },
-    {
         "inputs": [
             {
                 "internalType": "bytes32",
@@ -329,26 +309,13 @@ const ABI = [
         "type": "function"
     },
     {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "newOwner",
-                "type": "address"
-            }
-        ],
-        "name": "transferOwnership",
-        "outputs": [],
-        "stateMutability": "nonpayable",
-        "type": "function"
-    },
-    {
         "inputs": [],
-        "name": "whoIsTheOwner",
+        "name": "ticketcount",
         "outputs": [
             {
-                "internalType": "address",
+                "internalType": "uint256",
                 "name": "",
-                "type": "address"
+                "type": "uint256"
             }
         ],
         "stateMutability": "view",
@@ -370,18 +337,23 @@ function EventListner() {
     const [txhashish, setTxhashish] = useState("");
     const [txsender, setSender] = useState("");
     const [txamount, setTxamount] = useState("");
+    const [txlottonum, setLottonum] = useState("");
 
-    contract.on("TransferReceived", (_from, _amount, event) => {
+    const transactionLink = "https://rinkeby.etherscan.io/tx/" + txhashish;
+
+    contract.on("TransferReceived", (_from, _amount, _lottonum, event) => {
         if (_from === '0x3AA0Df703D0086495a3317A3e507b9C5302b42C1') {
 
             let tx = {
                 address: _from,
                 amount: ethers.utils.formatUnits(_amount, 18),
+                lottonum: _lottonum.toString(),
                 data: event.transactionHash
             };
             
             setTxhashish(tx.data);
             setSender(tx.address);
+            setLottonum(tx.lottonum);
             setTxamount(tx.amount);
 
             return () => {
@@ -396,11 +368,13 @@ function EventListner() {
 
     return (
         <section>
-            <div className="container">
-                <div className="text-white">TransactionHash: {txhashish}</div>
+            <div className="container text-center">
+                <div className="text-white">Transaction: <a target="_blank" rel="noreferrer" href={transactionLink}>{txhashish}</a></div>
                 <div className="text-white">Sender: {txsender}</div>
                 <div className="text-white">Amount: {txamount}</div>
+                <div className="text-white">Lottery Number: {txlottonum}</div>
             </div>
+            <div className="bottomblackline1"></div>
         </section>
     )
 

@@ -762,10 +762,10 @@ const Shibacontent = () => {
 	function openpopup() {
 		const Veri = sessionStorage.getItem("verification");
 		console.log(Veri);
-		if(Veri === "Agreed") {
+		if (Veri === "Agreed") {
 			handleBuy();
 		} else {
-		popup.classList.add("open-popup");
+			popup.classList.add("open-popup");
 		}
 	}
 
@@ -813,7 +813,7 @@ const Shibacontent = () => {
 							onClick={() => {
 								closepopup();
 								SetdeniedtoLocalStorage();
-								}}>
+							}}>
 							CLOSE
 						</button>
 					</div>
@@ -823,7 +823,7 @@ const Shibacontent = () => {
 							<div className="text-center My-6">
 								<h1 className="display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
 								<h1 className="display-5 fs-3 text-white mb-4">Who Will Be The Lucky Winner</h1>
-								<p className="text-white mb-5 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of shiba Inu coins will be burned to get the coins out of circulation.</p>
+								<p className="text-white mb-5 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
 								<div className="mb-5 d-grid gap-3 d-sm-flex justify-content-left">
 									<button type="submit" className="mybtn btn-warning2 px-4 me-sm-3" onClick={openpopup}>BUY TICKET</button>
 									<button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button>

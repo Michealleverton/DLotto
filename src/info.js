@@ -7,7 +7,7 @@ class Info extends Component {
     render() {
         return (
             <section className="bg_grey py-5 text-white" id="mytickets">
-                <div className="container px-5">
+                <div className="container px-5 pb-6">
                     <div className="row gx-5 margin_move_up">
                         <div className="col-lg-4 mb-5 mb-lg-0">
                             <div className="feature bg-warning bg-gradient text-white rounded-2 mb-5 margin_l10"><i className="bi bi-coin"></i></div>
@@ -29,7 +29,7 @@ class Info extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="mb-5"></div>
+                <div className="mb-5 bottomblackline1"></div>
 
             </section>
 
