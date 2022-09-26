@@ -23,6 +23,13 @@
   }
 }
 
+.text-white-shadow {
+  color: white;
+  @media (max-width:992px) {
+    text-shadow: 0 0 20px #000;
+  }
+}
+
 .sitemediumblue {
   color: var(--site-medium-blue);
 }
@@ -492,10 +499,9 @@ h1.outline-1 {
 .maininfo {
   position: relative;
   height: 51.5rem;
-  max-width: auto;
   background: url("../src/assets/lottery_home_page_04_5.gif") no-repeat center;
   object-fit: contain;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .social-media-icons-white a {

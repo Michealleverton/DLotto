@@ -823,7 +823,7 @@ const Shibacontent = () => {
 							<div className="text-center My-6">
 								<h1 className="display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
 								<h1 className="display-5 fs-3 text-white mb-4">Who Will Be The Lucky Winner</h1>
-								<p className="text-white mb-5 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
+								<p className="text-white-shadow mb-5 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
 								<div className="mb-5 d-grid gap-3 d-sm-flex justify-content-left">
 									<button type="submit" className="mybtn btn-warning2 px-4 me-sm-3" onClick={openpopup}>BUY TICKET</button>
 									<button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button>
@@ -854,8 +854,7 @@ const Shibacontent = () => {
 					</div>
 
 					<div>
-						<div className="shibtoburndisplayed shibafterfees mt-3">Number of Shib Ready to Burn: {(ethers.utils.formatEther(Balance) / 1000) * 900}</div>
-						<div className="shibtoburndisplayed shibafterfees">Jackpot Amount: {(ethers.utils.formatEther(Balance) / 1000) * 200}</div>
+						<div className="shibtoburndisplayed shibafterfees pt-4">Shib to Burn: {(ethers.utils.formatEther(Balance) / 1000) * 900} / Jackpot: {(ethers.utils.formatEther(Balance) / 1000) * 200}</div>
 					</div>
 
 				</div>

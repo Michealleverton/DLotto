@@ -331,8 +331,8 @@ const Lotteries = () => {
 						data-aos-duration="500"
 						data-aos-easing="ease-in-out">
 						<div className="card mb-5 mb-xl-0">
-							<div className="card-body p-5">
-								<div className="small text-primary text-uppercase fw-bold">
+							<div className="card-body p-4">
+								<div className="text-primary text-uppercase fw-bold">
 									<h6 className="display-6 fs-4 text-black">Sunday Draw</h6>
 								</div>
 								<div className="mb-3">
@@ -344,7 +344,7 @@ const Lotteries = () => {
 								</div>
 
 								{/* Fancy timer */}
-								<div className="timecontainer mb-4">
+								<div className="timecontainer mb-3">
 									<div className="counter">
 										<div className="time days">
 											<p className="my-para-big OTndays">00</p>
@@ -390,7 +390,7 @@ const Lotteries = () => {
 						data-aos-duration="500"
 						data-aos-easing="ease-in-out">
 						<div className="card mb-5 mb-xl-0">
-							<div className="card-body p-5">
+							<div className="card-body p-4">
 								<div className="small text-primary text-uppercase fw-bold">
 									<h6 className="display-6 fs-4 text-black">Wednesday Draw</h6>
 								</div>
@@ -449,7 +449,7 @@ const Lotteries = () => {
 						data-aos-duration="500"
 						data-aos-easing="ease-in-out">
 						<div className="card mb-5 mb-xl-0">
-							<div className="card-body p-5">
+							<div className="card-body p-4">
 								<div className="small text-primary text-uppercase fw-bold mb-2">
 									<h6 className="display-6 fs-4 text-black">50/50 Fridays</h6>
 								</div>
