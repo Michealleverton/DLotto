@@ -493,7 +493,12 @@ h1.outline-1 {
   width: 65px;
   background-repeat: no-repeat;
   background-position: center;
+}
 
+@media (max-width: 768px) {
+  .mylogo {
+    padding-bottom: .1rem;
+  }
 }
 
 .maininfo {
