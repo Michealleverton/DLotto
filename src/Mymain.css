@@ -497,6 +497,8 @@ h1.outline-1 {
 
 @media (max-width: 768px) {
   .mylogo {
+    height: 35px;
+    width: 35px;
     padding-bottom: .1rem;
   }
 }
