@@ -685,6 +685,13 @@ a.mynavlinks:active {
   margin-bottom: 1.75rem !important;
 }
 
+@media (max-width: 768px) {
+  .My-6 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
 .mybtn {
   display: inline-block;
   font-weight: 400;

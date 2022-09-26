@@ -837,20 +837,20 @@ const Shibacontent = () => {
 					<div className="timecontainer">
 						<div className="counter">
 							<div className="time days">
-								<p className="my-para-big TDdays">00</p>
-								<span className="my-span-small">Days</span>
+								<p className="para-big ndays">00</p>
+								<span className="span-small">Days</span>
 							</div>
 							<div className="time hours">
-								<p className="my-para-big TDhours">00</p>
-								<span className="my-span-small">Hours</span>
+								<p className="para-big nhours">00</p>
+								<span className="span-small">Hours</span>
 							</div>
 							<div className="time min">
-								<p className="my-para-big TDmins">00</p>
-								<span className="my-span-small">Mins</span>
+								<p className="para-big nmins">00</p>
+								<span className="span-small">Mins</span>
 							</div>
 							<div className="time sec">
-								<p className="my-para-big TDsecs">00</p>
-								<span className="my-span-small">Secs</span>
+								<p className="para-big nsecs">00</p>
+								<span className="span-small">Secs</span>
 							</div>
 						</div>
 					</div>
