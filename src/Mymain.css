@@ -11,7 +11,7 @@
   --color-p: rgb(255, 192, 203);
 }
 
-@media only screen and (orientation:portrait) {
+@media only screen and (orientation:landscape) {
   body {
     height: 100vw;
     transform: rotate(90deg);
