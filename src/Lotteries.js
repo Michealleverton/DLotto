@@ -384,7 +384,7 @@ const Lotteries = () => {
 						</div>
 					</div>
 
-					<div className="col-lg-6 col-xl-4" data-aos="flip-right"
+					<div className="col-lg-6 col-xl-4" data-aos="zoom-out-up"
 						data-aos-offset="150"
 						data-aos-delay="5"
 						data-aos-duration="500"
@@ -443,7 +443,7 @@ const Lotteries = () => {
 						</div>
 					</div>
 
-					<div className="col-lg-6 col-xl-4" data-aos="flip-left"
+					<div className="col-lg-6 col-xl-4" data-aos="flip-right"
 						data-aos-offset="150"
 						data-aos-delay="5"
 						data-aos-duration="500"
