@@ -11,13 +11,6 @@
   --color-p: rgb(255, 192, 203);
 }
 
-@media (max-width: 768px) and (orientation:landscape) {
-  body {
-    height: 100vw;
-    transform: rotate(90deg);
-  }
-}
-
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
