@@ -607,9 +607,9 @@ progress {
   line-height: 1.2;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 996px) {
   .display-6 {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 }
 

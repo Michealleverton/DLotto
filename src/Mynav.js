@@ -128,7 +128,7 @@ const Mynav = (props) => {
 
           <div className="ms-4">
             <h2 className="mt-1 mb-0 display-6 fw-bolder text-white">Decentraliz Lottery<br /></h2>
-            <p className="mt-0 mb-2 sitelightblue textcenter">The Only Crypto Lottery You Need</p>
+            <p className="mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
           </div>
 
           <div className="navbar-collapse text-center">
