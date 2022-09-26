@@ -7555,6 +7555,60 @@ fieldset:disabled .btn {
   }
 }
 
+/* *** */
+
+.sticky-left {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1020;
+}
+
+@media (min-width: 576px) {
+  .sticky-sm-left {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1020;
+  }
+}
+
+@media (min-width: 768px) {
+  .sticky-md-left {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1020;
+  }
+}
+
+@media (min-width: 992px) {
+  .sticky-lg-left {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1020;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sticky-xl-left {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1020;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sticky-xxl-left {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    z-index: 1020;
+  }
+}
+
 .hstack {
   display: flex;
   flex-direction: row;
