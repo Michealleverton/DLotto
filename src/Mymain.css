@@ -29,7 +29,7 @@
 
 @media (max-width:768px) {
   .text-white-shadow {
-    padding: 5px;
+    padding: 10px;
     background-color: #000;
     border-radius: 15px;
     opacity: 1;
