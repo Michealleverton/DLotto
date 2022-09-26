@@ -9,7 +9,7 @@ class Info extends Component {
             <section className="bg_grey py-5 text-white" id="mytickets">
                 <div className="container px-5 pb-6">
                     <div className="row gx-5 margin_move_up">
-                        <div className="col-lg-4">
+                        <div className="col-lg-4 mb-5 mb-lg-0">
                             <div className="feature bg-warning bg-gradient text-white rounded-2 mb-5 margin_l10"><i className="bi bi-coin"></i></div>
                             <h2 className="display-5 fs-3 text-white">Supported Coins</h2>
                             <p>Due to the fact that there are way to many coins to support. We have chosen a small slected few to use with our lotteries. There will be special lotteries like the current Shiba Inu Coin Burn Lottery where you have to spend that specific token to buy the ticket.</p>
