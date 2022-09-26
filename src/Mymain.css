@@ -806,6 +806,7 @@ a.mynavlinks:active {
 }
 
 .mybar {
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   background-color: #38384c;
