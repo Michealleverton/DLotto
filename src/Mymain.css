@@ -565,6 +565,12 @@ h1.outline-1 {
   margin-left: 150px;
 }
 
+@media (max-width: 768px) {
+  .margin_l10 {
+    margin-left: 100px;
+  }
+}
+
 .margin_t10 {
   margin-top: 8px;
   margin-left: 30px;
