@@ -513,6 +513,13 @@ h1.outline-1 {
   background: url("../src/assets/lottery_home_page_04_5.gif") no-repeat center;
   object-fit: contain;
   margin-bottom: 50px;
+  position: sticky;
+  left: 0;
+}
+
+.mobiletextcard {
+  background-color: #000;
+  opacity: 0.5;
 }
 
 .social-media-icons-white a {
