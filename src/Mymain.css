@@ -499,7 +499,8 @@ h1.outline-1 {
   .mylogo {
     height: 35px;
     width: 35px;
-    padding-bottom: .1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }
 
