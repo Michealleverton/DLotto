@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './index.css';
-import './Mymain.css';
-import './styles.css';
 
 class Info extends Component {
     render() {

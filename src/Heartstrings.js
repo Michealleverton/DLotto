@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import './Mymain.css';
-import './styles.css';
 
 class Heartstrings extends Component {
     render() {

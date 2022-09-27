@@ -3,7 +3,6 @@ import { ethers } from 'ethers';
 import Web3 from 'web3';
 import clipart1126634 from "./assets/clipart1126634.png";
 import "./countdownTimer";
-import './Mymain.css';
 
 const lottery_ABI = [
 	{

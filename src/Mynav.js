@@ -4,8 +4,6 @@ import {
   getCurrentWalletConnected //import here
 } from "./utils/interact.js";
 import logoicon from "./assets/logoicon.gif";
-import "./styles.css";
-import "./Mymain.css";
 import Pastevents from "./Pastevents";
 
 /* ------------------------------------- */

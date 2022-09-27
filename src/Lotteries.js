@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Web3 from 'web3';
-import "./styles.css"
 import clipart1126634 from "./assets/clipart1126634.png";
 import "./ODcountdownTimer";
 import "./TDcountdownTimer";

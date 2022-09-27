@@ -497,7 +497,6 @@ h1.outline-1 {
   position: relative;
   height: 51.5rem;
   background: url("../src/assets/lottery_home_page_04_5.gif") no-repeat center;
-  object-fit: contain;
   margin-bottom: 50px;
 }
 
