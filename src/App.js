@@ -3,11 +3,11 @@ import './styles.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import Listofplayers from './Listofplayers'
+// import EventListner from "./EventListner"
 import Mynav from './Mynav'
 import Shibacontent from "./Shibacontent"
 import Lotteries from "./Lotteries"
-// import Pastevents from "./Pastevents"
-// import EventListner from "./EventListner"
+import Pastevents from "./Pastevents"
 import Footer from "./Footer"
 import Info from "./info"
 import Heartstrings from "./Heartstrings"
@@ -17,10 +17,10 @@ function App() {
     <div className="mybar">
       <Mynav />
       {/* <Listofplayers /> */}
+      {/* <EventListner /> */}
       <Shibacontent />
       <Info />
-      {/* <Pastevents /> */}
-      {/* <EventListner /> */}
+      <Pastevents />
       <Lotteries />
       <Heartstrings />
       <Footer />
