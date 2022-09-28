@@ -719,7 +719,7 @@ const token_ABI = [
 		"type": "function"
 	}
 ];
-const PROVIDER = `https://rinkeby.infura.io/v3/${process.env.REACT_APP_INFURA_RINKEBY_KEY}`;
+const PROVIDER = `https://goerli.infura.io/v3/${process.env.REACT_APP_INFURA_RINKEBY_KEY}`;
 const LOTTERY_ADDRESS = process.env.REACT_APP_SHIBACONTRACT_ADDRESS;
 const TOKEN_ADDRESS = process.env.REACT_APP_LTT_TOKEN_CONTRACTADDRESS;
 

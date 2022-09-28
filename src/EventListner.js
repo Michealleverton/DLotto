@@ -339,7 +339,7 @@ function EventListner() {
     const [txamount, setTxamount] = useState("");
     const [txlottonum, setLottonum] = useState("");
 
-    const transactionLink = "https://rinkeby.etherscan.io/tx/" + txhashish;
+    const transactionLink = "https://goerli.etherscan.io/tx/" + txhashish;
 
     contract.on("TransferReceived", (_from, _amount, _lottonum, event) => {
         if (_from === '0x3AA0Df703D0086495a3317A3e507b9C5302b42C1') {

@@ -94,7 +94,7 @@ const lottery_ABI = [
 		"type": "receive"
 	}
 ];
-const PROVIDER = `https://rinkeby.infura.io/v3/${process.env.REACT_APP_INFURA_RINKEBY_KEY}`;
+const PROVIDER = `https://goerli.infura.io/v3/${process.env.REACT_APP_INFURA_RINKEBY_KEY}`;
 const OD_CONTRACT_ADDRESS = process.env.REACT_APP_ODCONTRACT_ADDRESS;
 const TD_CONTRACT_ADDRESS = process.env.REACT_APP_TDCONTRACT_ADDRESS;
 const FF_CONTRACT_ADDRESS = process.env.REACT_APP_FFCONTRACT_ADDRESS;

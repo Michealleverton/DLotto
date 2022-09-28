@@ -331,7 +331,7 @@ function Pastevents() {
     ];
     const contractAddress = process.env.REACT_APP_ODCONTRACT_ADDRESS;
     const provider = new ethers.providers.WebSocketProvider(
-        `wss://rinkeby.infura.io/ws/v3/${process.env.REACT_APP_INFURA_RINKEBY_KEY}`);
+        `wss://goerli.infura.io/ws/v3/${process.env.REACT_APP_INFURA_RINKEBY_KEY}`);
 
     const contract = new ethers.Contract(contractAddress, ABI, provider);
 
