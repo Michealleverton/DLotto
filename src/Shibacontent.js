@@ -853,7 +853,7 @@ const Shibacontent = () => {
 					</div>
 
 					<div>
-						<div className="shibtoburndisplayed shibafterfees pt-4">Shib to Burn: {(ethers.utils.formatEther(Balance) / 1000) * 900} / Jackpot: {(ethers.utils.formatEther(Balance) / 1000) * 200}</div>
+						<div className="shibtoburndisplayed shibafterfees pt-4">Shib to Burn: {((ethers.utils.formatEther(Balance) / 1000) * 900).toFixed(2)} / Jackpot: {((ethers.utils.formatEther(Balance) / 1000) * 200).toFixed(2)}</div>
 					</div>
 
 				</div>
