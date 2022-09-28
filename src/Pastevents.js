@@ -348,11 +348,10 @@ function Pastevents() {
     main().catch(console.error)
 
     return (
-        <section>
-            <div className="container">
+        <section className="mb-5">
+            <div className="container mb-4">
                 <div className="text-white">
                     <h5>View Transaction:
-
                         <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transhash}`}>
                             {(" " +
                                 String(transhash).substring(0, 6) +
