@@ -141,7 +141,7 @@ const Mynav = (props) => {
                   "..." +
                   String(walletAddress).substring(38)
                 ) : (
-                  <span>Connect Wallet</span>
+                  <span>Nothing to view</span>
                 )}
               </button>
             </div>

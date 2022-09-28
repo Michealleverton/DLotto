@@ -1,8 +1,9 @@
-// import { useState } from 'react';
-// import Web3 from 'web3';
+import { React, useState } from 'react';
 const ethers = require('ethers');
 
 function Pastevents() {
+
+    const [transhash, setTranshash] = useState([]);
 
     const ABI = [
         {
@@ -338,15 +339,31 @@ function Pastevents() {
     async function main() {
         const connecteduser = localStorage.getItem("address connected");
         console.log(connecteduser);
-        const filter = contract.filters.TransferReceived(connecteduser)
-        const r = await contract.queryFilter(filter, 0, 'latest')
-        console.log(r)
+        const filter = contract.filters.TransferReceived(connecteduser, null, 1)
+        const data = await contract.queryFilter(filter, 0, 'latest')
+        console.log(data[0].transactionHash)
+        setTranshash(data[1].transactionHash)
     }
 
     main().catch(console.error)
 
     return (
-        <h3 className="text-white">testing 1..2..3..</h3>
+        <section>
+            <div className="container">
+                <div className="text-white">
+                    <h5>View Transaction:
+
+                        <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transhash}`}>
+                            {(" " +
+                                String(transhash).substring(0, 6) +
+                                "..." +
+                                String(transhash).substring(60)
+                            )}
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </section>
     )
 
 }

@@ -639,7 +639,7 @@ a.goldenticket:active {
 }
 
 a.cleanlinks {
-  color: #ffffff;
+  color: var(--site-light-blue);
   text-decoration: none;
 }
 
