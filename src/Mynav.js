@@ -4,7 +4,6 @@ import {
   getCurrentWalletConnected //import here
 } from "./utils/interact.js";
 import logoicon from "./assets/logoicon.gif";
-import Pastevents from "./Pastevents";
 
 /* ------------------------------------- */
 /* ACCESS DENIED BY BLOCKED COUNTRY LIST */
@@ -75,7 +74,7 @@ const Mynav = (props) => {
           sessionStorage.setItem("address connected", accounts[0]);
           localStorage.setItem("address connected", accounts[0]);
           sessionStorage.removeItem("verification");
-          Pastevents();
+          window.location.reload();
         } else {
           setWallet("");
           setStatus("🦊 Connect to Metamask using the top right button.");
@@ -141,7 +140,7 @@ const Mynav = (props) => {
                   "..." +
                   String(walletAddress).substring(38)
                 ) : (
-                  <span>Nothing to view</span>
+                  <span>Connect Wallet</span>
                 )}
               </button>
             </div>

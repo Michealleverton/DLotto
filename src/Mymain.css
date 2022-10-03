@@ -21,37 +21,13 @@
   color: white;
 }
 
-.sitemediumblue {
-  color: var(--site-medium-blue);
-}
-
 .sitelightblue {
   color: var(--site-light-blue);
 }
 
-/* .popupContainer {
-    width: 100%;
-    height:100vh;
-    background: #3c5077;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 input.texboxlarger {
   width: 20px;
   height: 20px;
-}
-
-.pop_btn {
-  padding: 10px 60px;
-  background: #fff;
-  border: 0;
-  cursor: pointer;
-  outline: none;
-  font-size: 22px;
-  font-weight: 500;
-  border-radius: 30px;
 }
 
 .popup {

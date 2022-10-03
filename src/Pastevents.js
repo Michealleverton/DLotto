@@ -3,7 +3,8 @@ const ethers = require('ethers');
 
 function Pastevents() {
 
-    const [transhash, setTranshash] = useState([]);
+    const [transhash, setTranshash] = useState("");
+    const [lottonum, setLottonum] = useState("");
 
     const ABI = [
         {
@@ -338,14 +339,21 @@ function Pastevents() {
 
     async function main() {
         const connecteduser = localStorage.getItem("address connected");
-        console.log(connecteduser);
+        // console.log(connecteduser);
         const filter = contract.filters.TransferReceived(connecteduser, null, 1)
+        // console.log(filter.topics[1])
         const data = await contract.queryFilter(filter, 0, 'latest')
-        console.log(data[0].transactionHash)
+        // console.log(data[0].transactionHash)
+
         setTranshash(data[1].transactionHash)
+        setLottonum(filter.topics[3])
     }
 
     main().catch(console.error)
+
+    const hexToDecimal = hex => parseInt(hex, 16);
+    const dec5 = hexToDecimal(lottonum);
+    // console.log(dec5);
 
     return (
         <section className="mb-5">
@@ -360,6 +368,7 @@ function Pastevents() {
                             )}
                         </a>
                     </h5>
+                    <h6>Lottery number: {dec5}</h6>
                 </div>
             </div>
         </section>
