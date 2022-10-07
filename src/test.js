@@ -1,4 +1,5 @@
-[
+import Web3 from 'web3';
+const contract_abi = [
     {
         "inputs": [],
         "stateMutability": "nonpayable",
@@ -365,4 +366,14 @@
         "stateMutability": "payable",
         "type": "receive"
     }
-]
+];
+
+const PROVIDER = `https://goerli.infura.io/v3/a677b91fa92f47b0b027b8090ac5750b`;
+const web3 = new Web3(PROVIDER);
+const Contract = new web3.eth.contract(contract_abi);
+const EventTestContract = Contract.at("0x71283977AF36d33144cf66DE68F81534f9fB4270");
+
+EventTestContract.TransferReceived(function(err, data) {
+   if (!err)
+   console.log(data);
+});

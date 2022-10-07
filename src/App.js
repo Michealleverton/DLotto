@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Mynav from './Mynav'
 import Shibacontent from "./Shibacontent"
 import Lotteries from "./Lotteries"
-import Pastevents from "./Pastevents"
+// import Pastevents from "./Pastevents"
 import Footer from "./Footer"
 import Info from "./info"
 import Heartstrings from "./Heartstrings"
@@ -20,7 +20,7 @@ function App() {
       {/* <EventListner /> */}
       <Shibacontent />
       <Info />
-      <Pastevents />
+      {/* <Pastevents /> */}
       <Lotteries />
       <Heartstrings />
       <Footer />

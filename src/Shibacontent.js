@@ -734,10 +734,6 @@ const Shibacontent = () => {
 
 	useEffect(() => {
 		const web3 = new Web3(PROVIDER);
-		// web3.eth.getTransactionReceipt(
-		// '0x30f1962785e1f341f3858a75deb4c30b351fdf2b1ffc2c80932a6d5eee437d6f')
-		// .then(console.log);
-
 		const contract = new web3.eth.Contract(lottery_ABI, LOTTERY_ADDRESS);
 
 		// contract.methods.ticketCount().call()
