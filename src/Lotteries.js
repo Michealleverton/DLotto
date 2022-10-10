@@ -623,7 +623,7 @@ const Lotteries = () => {
 								</div>
 
 								{/* Fancy timer */}
-								<div className="timecontainer mb-3">
+								<div className="timecontainer mb-4">
 									<div className="counter">
 										<div className="time days">
 											<p className="my-para-big OTndays">00</p>
