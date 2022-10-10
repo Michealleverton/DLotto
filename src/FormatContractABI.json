@@ -8,16 +8,10 @@
         "anonymous": false,
         "inputs": [
             {
-                "indexed": false,
+                "indexed": true,
                 "internalType": "address",
                 "name": "receiver",
                 "type": "address"
-            },
-            {
-                "indexed": true,
-                "internalType": "string",
-                "name": "winmsg",
-                "type": "string"
             },
             {
                 "indexed": true,
