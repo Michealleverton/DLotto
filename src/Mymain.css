@@ -481,6 +481,11 @@ h1.outline-1 {
   font-size: 1.5rem;
 }
 
+.social-media-icons-white a:hover {
+  color: rgb(70, 56, 198);
+  font-size: 1.5rem;
+}
+
 .singlecol {
   max-width: 750px;
   margin: 0 auto;
