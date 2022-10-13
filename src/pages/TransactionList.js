@@ -32,6 +32,12 @@ export default function TransactionList() {
 
     if (error) return <div>something went wrong</div>
 
+    const test = new Date(1331300839*1000);
+    const year = new Date(1331300839*1250);
+    console.log((test.getDate()+1) + "/" + (test.getMonth()+1) + "/" + year.getFullYear());
+    sessionStorage.setItem("Timestamp", (test.getDate()+1) + "/" + (test.getMonth()+1) + "/" + year.getFullYear())
+    let timey = sessionStorage.getItem("Timestamp");
+
     return (
         <div className="TransactionList pb-5">
 
@@ -50,6 +56,7 @@ export default function TransactionList() {
                         <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6>
                         <h6>Amount: {transfers.amount}</h6>
                         <h6>Lottery Number: {transfers.lottonum}</h6>
+                        <h6>Purchased on: {timey}</h6>
                     </div>
                 );
             })}
