@@ -36,7 +36,7 @@ export default function TransactionList() {
         <div className="TransactionList pb-5">
 
             <div className="container text-center pb-5 pt-5">
-                <h2 className="display-5 fw-bolder text-center text-white">Your Tickets</h2>
+                <h1 className="fw-bolder text-center text-white">Your Tickets</h1>
             </div>
             {data.transferReceiveds.map((transfers) => {
                 return (
@@ -55,7 +55,7 @@ export default function TransactionList() {
             })}
 
             <div className="container text-center pb-5 pt-5">
-                <h2 className="display-5 fw-bolder text-center text-white">Free Play Tickets</h2>
+                <h1 className="fw-bolder text-center text-white">Free Play Tickets</h1>
             </div>
             {data.freePlays.map((freeplay) => {
                 return (
