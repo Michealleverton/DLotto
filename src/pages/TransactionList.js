@@ -1,4 +1,5 @@
 import React from 'react';
+import { ethers } from 'ethers';
 import { useQuery, gql } from "@apollo/client";
 import "./TransactionList.css";
 import loader from "../assets/loader.gif";
@@ -54,7 +55,7 @@ export default function TransactionList() {
                         </h6>
 
                         <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6>
-                        <h6>Amount: {transfers.amount}</h6>
+                        <h6>Amount: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
                         <h6>Lottery Number: {transfers.lottonum}</h6>
                         <h6>Purchased on: {timey}</h6>
                     </div>
@@ -75,6 +76,7 @@ export default function TransactionList() {
 
                         <h6>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h6>
                         <h6>Lottery Number: {freeplay.lottonum}</h6>
+                        <h6>Purchased on: {timey}</h6>
                     </div>
                 );
             })}
