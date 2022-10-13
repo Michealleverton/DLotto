@@ -602,7 +602,7 @@ const Lotteries = () => {
 				<div className="text-center mb-5">
 					<h1 className="fw-bolder text-center text-white">TICKET OPTIONS</h1>
 				</div>
-				<div className="row gx-4 justify-content-center">
+				<div className="row justify-content-center">
 
 					<div className="col-lg-6 col-xl-4" data-aos="flip-left"
 						data-aos-offset="150"

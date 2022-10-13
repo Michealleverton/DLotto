@@ -8,7 +8,15 @@
     margin-right: 7rem;
 }
 
+@media (max-width: 768px) {
+    .TransactionList {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .ticketholder {
+    background-image: url("../assets/oneDcardbacking.jpg");
     justify-content: space-between;
     margin-right: 2rem;
     padding: 1rem;
@@ -22,7 +30,7 @@
 
 @media (max-width: 768px) {
     .ticketholder {
-        width: 100%;
+        margin-right: 0;
     }
 }
 
