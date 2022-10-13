@@ -819,15 +819,11 @@ const Shibacontent = () => {
 								<h1 className="display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
 								<h1 className="display-5 fs-3 text-white mb-4">Who Will Be The Lucky Winner</h1>
 								<p className="text-white-shadow mb-5 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
-								<div className=" d-grid gap-3 d-sm-flex justify-content-left">
-									<button type="submit" className="mybtn btn-warning2 px-4 me-sm-3" onClick={openpopup}>BUY TICKET</button>
-									<button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button>
-								</div>
 							</div>
 						</div>
 					</div>
 					{/* Fancy timer */}
-					<div className="timecontainer">
+					<div className="timecontainer mb-3">
 						<div className="counter">
 							<div className="time days">
 								<p className="para-big ndays">00</p>
@@ -846,6 +842,11 @@ const Shibacontent = () => {
 								<span className="span-small">Secs</span>
 							</div>
 						</div>
+					</div>
+
+					<div className=" d-grid gap-3 d-sm-flex justify-content-left">
+						<button type="submit" className="mybtn btn-warning2 px-4 me-sm-3" onClick={openpopup}>BUY A SHIBA ARMY TICKET NOW</button>
+						{/* <button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button> */}
 					</div>
 
 					<div>
