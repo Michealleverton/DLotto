@@ -508,7 +508,7 @@ const Lotteries = () => {
 
 	return (
 		<section className="bg_grey_opacity border-bottom" id="tickets">
-			<div className="container pb-6">
+			<div className="container px-5 pb-6">
 
 				{/* One dollar draw agegate popuup */}
 				<div className="popup pt-3" id="ODpopup">
