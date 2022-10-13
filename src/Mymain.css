@@ -443,11 +443,11 @@ h1.outline-1 {
 }
 
 .bottomblackline {
-  border-bottom: 0.1875em solid rgb(0, 0, 0);
+  border-bottom: 0.1875em solid rgb(0, 0, 0, 0.2);
 }
 
 .bottomblackline1 {
-  border-bottom: 0.1em solid rgb(0, 0, 0);
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
@@ -481,8 +481,8 @@ h1.outline-1 {
   font-size: 1.5rem;
 }
 
-.social-media-icons-white a:hover {
-  color: rgb(70, 56, 198);
+.social-media-icons-white a:hover  {
+  color: rgb(62, 66, 189);
   font-size: 1.5rem;
 }
 
