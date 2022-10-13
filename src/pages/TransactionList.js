@@ -41,15 +41,15 @@ export default function TransactionList() {
             {data.transferReceiveds.map((transfers) => {
                 return (
                     <div key={transfers.id} className="ticketholder mb-5">
-                        <h5>Transaction: ‎
+                        <h6>Transaction: ‎
                             <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.id.substring(0, 66)}`}>
                                 {transfers.id.substring(0, 10)} ...
                             </a>
-                        </h5>
+                        </h6>
 
-                        <h5>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h5>
-                        <h5>Amount: {transfers.amount}</h5>
-                        <h5>Lottery Number: {transfers.lottonum}</h5>
+                        <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6>
+                        <h6>Amount: {transfers.amount}</h6>
+                        <h6>Lottery Number: {transfers.lottonum}</h6>
                     </div>
                 );
             })}
@@ -60,14 +60,14 @@ export default function TransactionList() {
             {data.freePlays.map((freeplay) => {
                 return (
                     <div key={freeplay.id} className="ticketholder mb-5">
-                        <h5>Transaction: ‎
+                        <h6>Transaction: ‎
                             <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.id.substring(0, 66)}`}>
                                 {freeplay.id.substring(0, 10)} ...
                             </a>
-                        </h5>
+                        </h6>
 
-                        <h5>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h5>
-                        <h5>Lottery Number: {freeplay.lottonum}</h5>
+                        <h6>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h6>
+                        <h6>Lottery Number: {freeplay.lottonum}</h6>
                     </div>
                 );
             })}
