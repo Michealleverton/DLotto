@@ -845,7 +845,7 @@ const Shibacontent = () => {
 					</div>
 
 					<div className=" d-grid gap-3 d-sm-flex justify-content-left">
-						<button type="submit" className="mybtn btn-warning2 px-4 me-sm-3" onClick={openpopup}>BUY A SHIBA ARMY TICKET NOW</button>
+						<button type="submit" className="mybtn btn-warning2 px-4 me-sm-3" onClick={openpopup}>BUY A SHIBA BURN TICKET NOW</button>
 						{/* <button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button> */}
 					</div>
 
