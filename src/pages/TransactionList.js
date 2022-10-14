@@ -62,12 +62,12 @@ export default function TransactionList() {
                 );
             })}
 
-            <div className="container text-center pb-5 pt-5">
+            <div className="container text-center text-white pb-5 pt-5">
                 <h1 className="fw-bolder text-center text-white">Free Play Tickets</h1>
             </div>
             {data.freePlays.map((freeplay) => {
                 return (
-                    <div key={freeplay.id} className="ticketholder mb-5">
+                    <div key={freeplay.id} className="ticketholder text-white mb-5">
                         <h6>Transaction: ‎
                             <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.id.substring(0, 66)}`}>
                                 {freeplay.id.substring(0, 10)} ...

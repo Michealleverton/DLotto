@@ -507,7 +507,7 @@ const Lotteries = () => {
 	}
 
 	return (
-		<section className="bg_grey_opacity border-bottom" id="tickets">
+		<section className="bg_grey_opacity" id="tickets">
 			<div className="container px-5 pb-6">
 
 				{/* One dollar draw agegate popuup */}
@@ -785,7 +785,6 @@ const Lotteries = () => {
 				</div>
 
 			</div>
-			<div className="bottomblackline1"></div>
 		</section>
 	)
 }

@@ -27,7 +27,6 @@ class Info extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="mb-5 bottomblackline1"></div>
 
             </section>
 
