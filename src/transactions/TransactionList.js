@@ -6,7 +6,7 @@ import loader from "../assets/loader.gif";
 
 const GET_TRANSACTIONS = gql`
     query {
-        transferReceiveds(skip: 0, first: 5, orderBy: timestamp, orderDirection: desc, where: {from: "0x3AA0Df703D0086495a3317A3e507b9C5302b42C1"}) {
+        transferReceiveds(skip: 0, first: 3, orderBy: timestamp, orderDirection: desc, where: {from: "0x3AA0Df703D0086495a3317A3e507b9C5302b42C1"}) {
             id
             from
             amount
@@ -14,7 +14,7 @@ const GET_TRANSACTIONS = gql`
             timestamp
         }
 
-        freePlays(skip: 0, first: 5, orderBy: timestamp, orderDirection: desc, where: {receiver: "0x3AA0Df703D0086495a3317A3e507b9C5302b42C1"}) {
+        freePlays(skip: 0, first: 3, orderBy: timestamp, orderDirection: desc, where: {receiver: "0x3AA0Df703D0086495a3317A3e507b9C5302b42C1"}) {
             id
             receiver
             lottonum
@@ -40,6 +40,7 @@ export default function TransactionList() {
     let timey = sessionStorage.getItem("Timestamp");
 
     return (
+        <section id="mytickets">
         <div className="TransactionList pb-5">
 
             <div className="container text-center pb-5 pt-5">
@@ -82,5 +83,6 @@ export default function TransactionList() {
             })}
 
         </div>
+        </section>
     )
 }

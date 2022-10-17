@@ -507,7 +507,7 @@ const Lotteries = () => {
 	}
 
 	return (
-		<section className="bg_grey_opacity" id="tickets">
+		<section className="bg_grey_opacity mypy-5" id="tickets">
 			<div className="container px-5 pb-6">
 
 				{/* One dollar draw agegate popuup */}
@@ -599,7 +599,7 @@ const Lotteries = () => {
 					</button>
 				</div>
 
-				<div className="text-center mb-5">
+				<div className="text-center">
 					<h1 className="fw-bolder text-center text-white">Ticket Options</h1>
 				</div>
 				<div className="row justify-content-center">

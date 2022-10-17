@@ -115,37 +115,40 @@ const Mynav = (props) => {
   // Navbar html to display App itmes
 
   return (
-    <section className="header sticky-top px-5 bg_blue bottomblackline myshadow-lg">
+    <section className="header sticky-top px-5 bg_blue bottomblackline myshadow-lg" id="home">
 
       <nav className="navbar navbar-expand-lg mycontainer justify-content-center">
-        
-          <div>
+
+        <div>
           <img alt="" className="mylogo" src={logoicon} />
+        </div>
+
+        <div className="ms-4">
+          <h2 className="mt-1 mb-0 display-6 fw-bolder text-white">Decentraliz Lottery<br /></h2>
+          <p className="mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
+        </div>
+
+        <div className="navbar-collapse text-center">
+
+          <nav className="nav ms-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" />
+            {/* <li><a href="#home" className="mynavlinks nav-link px-2">HOME</a></li>
+            <li><a href="#tickets" className="mynavlinks nav-link px-2">TICKETS</a></li>
+            <li><a href="#mytickets" className="mynavlinks nav-link px-2">MY TICKETS</a></li>
+            <li><a href="#specialdraws" className="mynavlinks nav-link px-2">SPECIAL DRAWS</a></li> */}
+          <div className="text-center flex-wrap">
+            <button className="mybtn btn-warning2 px-4 py-2" onClick={connectWalletPressed}>
+              {walletAddress.length > 0 ? (
+                "Account: " +
+                String(walletAddress).substring(0, 6) +
+                "..." +
+                String(walletAddress).substring(38)
+              ) : (
+                <span>Connect Wallet</span>
+              )}
+            </button>
           </div>
 
-          <div className="ms-4">
-            <h2 className="mt-1 mb-0 display-6 fw-bolder text-white">Decentraliz Lottery<br /></h2>
-            <p className="mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
-          </div>
-
-          <div className="navbar-collapse text-center">
-            
-            <nav className="nav ms-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" />
-
-            <div className="text-center flex-wrap">
-              <button className="mybtn btn-warning2 px-4 py-2" onClick={connectWalletPressed}>
-                {walletAddress.length > 0 ? (
-                  "Account: " +
-                  String(walletAddress).substring(0, 6) +
-                  "..." +
-                  String(walletAddress).substring(38)
-                ) : (
-                  <span>Connect Wallet</span>
-                )}
-              </button>
-            </div>
-
-          </div>
+        </div>
 
       </nav>
 

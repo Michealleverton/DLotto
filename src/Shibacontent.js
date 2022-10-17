@@ -789,7 +789,7 @@ const Shibacontent = () => {
 	}
 
 	return (
-		<section id="home">
+		<section id="">
 			<header className="maininfo">
 				<div className="container px-3">
 
