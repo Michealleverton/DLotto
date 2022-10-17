@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Mynav from './Mynav'
 import Shibacontent from "./Shibacontent"
 import Lotteries from "./Lotteries"
-import TransactionList from "./pages/TransactionList"
+import TransactionList from "./transactions/TransactionList"
 // import Pastevents from "./Pastevents"
 import Footer from "./Footer"
 import Info from "./info"
