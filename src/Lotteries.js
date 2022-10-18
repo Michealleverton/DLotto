@@ -600,7 +600,7 @@ const Lotteries = () => {
 				</div>
 
 				<div className="text-center">
-					<h1 className="fw-bolder text-center text-white">Ticket Options</h1>
+					<h1 className="fw-bolder text-center text-white mb-5">Ticket Options</h1>
 				</div>
 				<div className="row justify-content-center">
 

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Heartstrings extends Component {
     render() {
         return (
-            <section className="bg_white py-5" id="specialdraws">
+            <section className="bg_white mypy-6" id="specialdraws">
                 <div className="container px-5 my-5 px-5">
                     <div className="text-center mb-5">
                         <h2 className="fw-bolder turntextblack">Heart String Testimonials</h2>
