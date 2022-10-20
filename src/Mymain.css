@@ -17,6 +17,12 @@
   }
 }
 
+/* dropdown menu */
+
+/* end of dropdown menu */
+
+/* loading spinner */
+
 .loader {
   position: relative;
   width: 100px;
@@ -76,6 +82,8 @@
   border: solid rgb(69, 92, 126);
   border-radius: 50%;
 }
+
+/* end of loader */
 
 .text-white-shadow {
   color: white;

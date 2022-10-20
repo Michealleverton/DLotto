@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { ethers } from 'ethers'
 import { useQuery, gql } from "@apollo/client"
 import "./TransactionList.css"
@@ -39,15 +39,14 @@ export default function TransactionList() {
 
     if (error) return <div className='text-white'>something went wrong</div>
 
-
-
     return (
         <section id="mytickets">
             <div className="TransactionList pb-5">
 
-                <div className="container text-center pb-5 pt-5">
-                    <h1 className="fw-bolder text-center text-white">Your Tickets</h1>
+                <div className="container text-center pb-4 pt-5">
+                    <h1 className="fw-bolder text-center text-white mb-4">Your Tickets</h1>
                 </div>
+
                 {data.transferReceiveds.map((transfers) => {
 
                     var s = new Date(transfers.timestamp * 1000).toLocaleDateString("en-US")
@@ -60,7 +59,7 @@ export default function TransactionList() {
                         <div key={transfers.id} className="ticketholder mb-5">
                             <h6>Transaction: ‎
                                 <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.id.substring(0, 66)}`}>
-                                    {transfers.id.substring(0, 8)} ...
+                                    {transfers.id.substring(0, 10)} ...
                                 </a>
                             </h6>
 
