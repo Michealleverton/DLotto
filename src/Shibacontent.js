@@ -723,8 +723,6 @@ const PROVIDER = `https://goerli.infura.io/v3/${process.env.REACT_APP_INFURA_RIN
 const LOTTERY_ADDRESS = process.env.REACT_APP_SHIBACONTRACT_ADDRESS;
 const TOKEN_ADDRESS = process.env.REACT_APP_LTT_TOKEN_CONTRACTADDRESS;
 
-
-
 const Shibacontent = () => {
 
 	// const [TicketCount, setticketCount] = useState(0);
@@ -859,6 +857,11 @@ const Shibacontent = () => {
 					<p><span id="country"></span></p>
 					<p></p>
 				</div>
+
+				<a href="#home" className="to-top">
+					<i className='fas fa-chevron-up'></i>
+				</a>
+				
 			</header>
 		</section>
 	)

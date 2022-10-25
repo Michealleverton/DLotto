@@ -1,11 +1,12 @@
 import React from 'react';
 
-function myFunction() {
-    var tt = document.getElementById("tooltipdemo")
-    tt.classList.toggle("show")
-}
-
 function Tooltip() {
+
+    function myFunction() {
+        var tt = document.getElementById("tooltipdemo")
+        tt.classList.toggle("show")
+    }
+
     return (
         <button class="arrowpopup" onClick={() => { myFunction() }}>
             Tooltip Demo Click here!
