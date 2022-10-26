@@ -858,9 +858,9 @@ const Shibacontent = () => {
 					<p></p>
 				</div>
 
-				<a href="#home" className="to-top">
+				{/* <a href="#home" className="to-top">
 					<i className='fas fa-chevron-up'></i>
-				</a>
+				</a> */}
 				
 			</header>
 		</section>

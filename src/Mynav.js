@@ -131,10 +131,10 @@ const Mynav = (props) => {
         <div className="navbar-collapse text-center">
 
           <nav className="nav ms-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" />
-            <li><a href="#home" className="mynavlinks nav-link px-2">HOME</a></li>
+            {/* <li><a href="#home" className="mynavlinks nav-link px-2">HOME</a></li>
             <li><a href="#tickets" className="mynavlinks nav-link px-2">TICKETS</a></li>
             <li><a href="#mytickets" className="mynavlinks nav-link px-2">MY TICKETS</a></li>
-            <li><a href="#specialdraws" className="mynavlinks nav-link px-2">SPECIAL DRAWS</a></li>
+            <li><a href="#specialdraws" className="mynavlinks nav-link px-2">SPECIAL DRAWS</a></li> */}
           <div className="text-center flex-wrap">
             <button className="mybtn btn-warning2 px-4 py-2" onClick={connectWalletPressed}>
               {walletAddress.length > 0 ? (

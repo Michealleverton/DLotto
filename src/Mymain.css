@@ -19,6 +19,20 @@
 
 /* to top button */
 
+::-webkit-scrollbar {
+  width: 1.25em;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(49, 58, 70);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 119, 144);
+  border: .25em solid rgb(49, 58, 70);
+  border-radius: 100vw;
+}
+
 /* end of to top button */
 
 /* loading spinner */
