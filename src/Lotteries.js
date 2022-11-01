@@ -658,7 +658,7 @@ const Lotteries = () => {
 										No <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
 									</li> */}
 								</ul>
-								<div className="d-grid"><button type="submit" onClick={ODopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Ticket</button></div>
+								<div className=""><button type="submit" onClick={ODopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Ticket</button></div>
 							</div>
 						</div>
 					</div>
