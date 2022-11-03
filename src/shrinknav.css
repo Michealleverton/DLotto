@@ -1,0 +1,81 @@
+nav {
+    height: 100px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #352882;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5) !important;
+    transition: 0.65s;
+    border-bottom: 0.1875em solid rgba(0, 0, 0, 0.539);
+}
+
+nav.scrollNav {
+    height: 60px;
+    background-color: #352882;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5) !important;
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.539);
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.content {
+    text-align: center;
+    background: #38384c;
+}
+
+.nav-content {
+    width: 100vw;
+    padding: 0 100px;
+    display: flex;
+}
+
+img.logo {
+    height: 7.8rem;
+    background: #352882;
+    padding: 0.75rem;
+    transition: 0.75s;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom: 0.1875em solid rgba(0, 0, 0, 0.539);
+}
+
+nav.scrollNav img.logo {
+    height: 80px;
+    padding: 8px;
+    background: #352882;
+    border-bottom: 0.1875em solid rgba(0, 0, 0, 0.539);
+}
+
+h2.companyname-adjust {
+    margin-top: 0.5rem !important;
+    color: #fff;
+    transition: 0.75s;
+}
+
+nav.scrollNav .companyname-adjust {
+    margin-top: 0.1rem !important;
+    color: #fff;
+    transition: 0.75s;
+}
+
+p.slogan-adjust {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+nav.scrollNav .slogan-adjust {
+    color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+
+.btn-adjust {
+    display: flex;
+    width: 50rem;
+    align-items: center;
+    justify-content:right;
+}

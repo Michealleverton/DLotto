@@ -787,9 +787,9 @@ const Shibacontent = () => {
 	}
 
 	return (
-		<section id="">
+		<section id="home">
 			<header className="maininfo">
-				<div className="container px-3">
+				<div className="container px-3 pt-4">
 
 					<div className="popup pt-3" id="popup">
 						<img alt="" src={clipart1126634} />

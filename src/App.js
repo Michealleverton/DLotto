@@ -1,9 +1,10 @@
 import './Mymain.css';
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'
 // import Listofplayers from './Listofplayers'
-import Mynav from './Mynav'
+// import Mynav from './Mynav'
+import Shrinknav from './Shrinknav'
 import Shibacontent from "./Shibacontent"
 import Lotteries from "./Lotteries"
 import TransactionList from "./transactions/TransactionList"
@@ -14,7 +15,8 @@ import Heartstrings from "./Heartstrings"
 function App() {
   return (
     <div className="mybar">
-      <Mynav />
+      {/* <Mynav /> */}
+      <Shrinknav />
       {/* <Listofplayers /> */}
       <Shibacontent />
       <Info />

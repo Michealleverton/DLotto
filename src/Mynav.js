@@ -115,7 +115,7 @@ const Mynav = (props) => {
   // Navbar html to display App itmes
 
   return (
-    <section className="header sticky-top px-5 bg_blue bottomblackline myshadow-lg" id="home">
+    <section className="header fixed-top px-5 bg_blue bottomblackline myshadow-lg" id="home">
 
       <nav className="navbar navbar-expand-lg mycontainer justify-content-center">
 
