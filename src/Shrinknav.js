@@ -132,7 +132,7 @@ const Shrinknav = (props) => {
                     <div>
                         <img alt="" className="logo" src={logoicon} />
                     </div>
-                    <div className="ms-4 me-auto">
+                    <div className="ms-4 mr_auto">
                         <h2 className="companyname-adjust mb-0 display-6 fw-bolder">Decentraliz Lottery<br /></h2>
                         <p className="slogan-adjust mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
                     </div>

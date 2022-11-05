@@ -686,8 +686,8 @@ h1.outline-1 {
   background-color: rgb(255, 0, 0);
 }
 
-.me-6 {
-  margin-right: 3.5rem !important;
+.mr_auto {
+  margin-right: auto !important;
 }
 
 .inthemoneytext {

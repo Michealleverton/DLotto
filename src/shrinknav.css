@@ -73,6 +73,7 @@ div.btn-adjust {
 }
 
 nav.scrollNav .btn-adjust {
+    display: flex;
     width: 50rem;
     align-items: center;
     justify-content:right;
