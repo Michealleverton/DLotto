@@ -789,7 +789,7 @@ const Shibacontent = () => {
 	return (
 		<section id="home">
 			<header className="maininfo">
-				<div className="container px-3 pt-4">
+				<div className="container px-3 pt-5">
 
 					<div className="popup pt-3" id="popup">
 						<img alt="" src={clipart1126634} />
@@ -858,9 +858,6 @@ const Shibacontent = () => {
 					<p></p>
 				</div>
 
-				{/* <a href="#home" className="to-top">
-					<i className='fas fa-chevron-up'></i>
-				</a> */}
 				
 			</header>
 		</section>
