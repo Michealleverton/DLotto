@@ -682,6 +682,14 @@ h1.outline-1 {
   background-color: #fff;
 }
 
+.bg_red {
+  background-color: rgb(255, 0, 0);
+}
+
+.me-6 {
+  margin-right: 3.5rem !important;
+}
+
 .inthemoneytext {
   color: goldenrod;
 }

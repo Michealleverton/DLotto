@@ -42,13 +42,15 @@ nav.scrollNav img.logo {
 }
 
 h2.companyname-adjust {
-    margin-top: 0.5rem !important;
+    font-size: calc(1.325rem + 0.9vw);
+    margin-top: 0.8rem !important;
     color: #fff;
     transition: 0.75s;
 }
 
 nav.scrollNav .companyname-adjust {
-    margin-top: 0.1rem !important;
+    font-size: 2rem;
+    margin-top: 0.5rem !important;
     color: #fff;
     transition: 0.75s;
 }
@@ -63,8 +65,14 @@ nav.scrollNav .slogan-adjust {
     transition: 0.5s;
 }
 
-.btn-adjust {
+div.btn-adjust {
     display: flex;
+    width: 50rem;
+    align-items: center;
+    justify-content:right;
+}
+
+nav.scrollNav .btn-adjust {
     width: 50rem;
     align-items: center;
     justify-content:right;

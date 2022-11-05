@@ -132,8 +132,8 @@ const Shrinknav = (props) => {
                     <div>
                         <img alt="" className="logo" src={logoicon} />
                     </div>
-                    <div className="ms-4">
-                        <h2 className="companyname-adjust mt-2 mb-0 display-6 fw-bolder">Decentraliz Lottery<br /></h2>
+                    <div className="ms-4 me-auto">
+                        <h2 className="companyname-adjust mb-0 display-6 fw-bolder">Decentraliz Lottery<br /></h2>
                         <p className="slogan-adjust mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
                     </div>
                     {/* <div>
@@ -144,7 +144,7 @@ const Shrinknav = (props) => {
                         <li><a href="#specialdraws" className="mynavlinks nav-link px-2">SPECIAL DRAWS</a></li>
                         </ul>
                     </div> */}
-                    <div className="btn-adjust">
+                    <div id="btnholder" className="btn-adjust">
                         <button className="mybtn btn-warning2 px-4 py-2" onClick={connectWalletPressed}>
                             {walletAddress.length > 0 ? (
                                 "Account: " +
