@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="py-4 bg-dark">
+    
+    <footer className="py-4 bg_blue">
     <div className="container px-5">
-
       <div className='singlecol social-media-icons-white d-flex justify-content-evenly pt-2 pb-4'>
         <a href='https://facebook.com'>
           <i className="fa-brands fa-facebook"></i>

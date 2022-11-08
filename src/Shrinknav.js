@@ -157,6 +157,7 @@ const Shrinknav = (props) => {
                         </button>
                     </div>
                 </div>
+                
 				<div><a href="#home" className="backtotop"><i class="byebye fa-solid fa-arrow-up-from-bracket"></i></a></div>
 
             </nav>

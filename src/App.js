@@ -11,6 +11,8 @@ import TransactionList from "./transactions/TransactionList"
 import Footer from "./Footer"
 import Info from "./info"
 import Heartstrings from "./Heartstrings"
+import Waveseperator from "./waveseporator/Waveseperator"
+// import Singlewave from "./waveseporator/Singlewave"
 
 function App() {
   return (
@@ -20,9 +22,11 @@ function App() {
       {/* <Listofplayers /> */}
       <Shibacontent />
       <Info />
+      {/* <Singlewave /> */}
       <Lotteries />
       <TransactionList />
       <Heartstrings />
+      <Waveseperator />
       <Footer />
     </div>
   );

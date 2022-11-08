@@ -553,7 +553,7 @@ h1.outline-1 {
 
 .maininfo {
   position: relative;
-  margin-top: 4.5rem;
+  margin-top: 4rem;
   height: 51.5rem;
   background: url("../src/assets/lottery_home_page_04_5.gif") no-repeat center;
   margin-bottom: 50px;
@@ -569,7 +569,7 @@ h1.outline-1 {
 }
 
 .social-media-icons-white a:hover  {
-  color: rgb(62, 66, 189);
+  color: rgb(85, 90, 239);
   font-size: 1.5rem;
 }
 
@@ -675,7 +675,7 @@ h1.outline-1 {
 }
 
 .bg_blue {
-  background-color: #352882;
+  background-color: #3e2f93;
 }
 
 .bg_white {
@@ -684,6 +684,9 @@ h1.outline-1 {
 
 .bg_red {
   background-color: rgb(255, 0, 0);
+}
+.bg_lightblue {
+  background-color: #b5acea;
 }
 
 .mr_auto {
