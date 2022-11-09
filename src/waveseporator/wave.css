@@ -24,21 +24,23 @@ background-size: 1000px 100px;
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
-    animation: animateWave2 11s linear infinite;
+    animation: animateWave 11s linear infinite;
+    animation-direction: reverse;
 }
 
 .wave#wave3 {
     z-index: 998;
     opacity: 0.2;
     bottom: 15px;
-    animation: animateWave3 10s linear infinite;
+    animation: animateWave 10s linear infinite;
 }
 
 .wave#wave4 {
     z-index: 997;
     opacity: 0.7;
     bottom: 20px;
-    animation: animateWave3 9s linear infinite;
+    animation: animateWave 9s linear infinite;
+    animation-direction: reverse;
 }
 
 @keyframes animateWave
@@ -50,41 +52,5 @@ background-size: 1000px 100px;
     100%
     {
         background-position-x: 0px;
-    }
-}
-
-@keyframes animateWave2
-{
-    0%
-    {
-        background-position-x: 0px;
-    }
-    100%
-    {
-        background-position-x: 1000px;
-    }
-}
-
-@keyframes animateWave3
-{
-    0%
-    {
-        background-position-x: 1000px;
-    }
-    100%
-    {
-        background-position-x: 0px;
-    }
-}
-
-@keyframes animateWave4
-{
-    0%
-    {
-        background-position-x: 0px;
-    }
-    100%
-    {
-        background-position-x: 1000px;
     }
 }
