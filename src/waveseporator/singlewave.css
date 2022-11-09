@@ -1,5 +1,6 @@
 .singlewave {
-    width: 100vw;
-    height: 100px;
-    background: #b5acea;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }

@@ -14,7 +14,7 @@ class Heartstrings extends Component {
 
                             <div className="card mb-4" data-aos="fade-right"
                                 data-aos-offset="200"
-                                data-aos-delay="10"
+                                data-aos-delay="20"
                                 data-aos-duration="500"
                                 data-aos-easing="ease-in-out">
                                 <div className="card-body p-4">
@@ -30,7 +30,7 @@ class Heartstrings extends Component {
 
                             <div className="card mb-4" data-aos="fade-left"
                                 data-aos-offset="200"
-                                data-aos-delay="10"
+                                data-aos-delay="20"
                                 data-aos-duration="500"
                                 data-aos-easing="ease-in-out">
                                 <div className="card-body p-4">
