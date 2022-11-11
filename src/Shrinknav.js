@@ -60,6 +60,18 @@ async function getLocationData() {
 
 getLocationData();
 
+// function show_hide() 
+// {
+//     if(adminstate == "REACT_APP_OWNER") 
+//     {
+//         document.getElementById(adminbtn).style.display="inline";
+//         adminstate = "";
+//     }else{
+//         document.getElementById(adminbtn).style.display="none";
+//         adminstate = localStorage.getItem("address connected");
+//     }
+// }
+
 const Shrinknav = (props) => {
 
     //State variables
@@ -95,6 +107,8 @@ const Shrinknav = (props) => {
         }
     }
 
+
+
     useEffect(() => {
         async function fetchData() {
             const { address, status } = await getCurrentWalletConnected();
@@ -111,6 +125,12 @@ const Shrinknav = (props) => {
         setStatus(walletResponse.status);
         setWallet(walletResponse.address);
         localStorage.setItem("address connected", walletResponse.address);
+        const adminstate = localStorage.getItem("address connected");
+        if (adminstate === process.env.REACT_APP_OWNER) {
+            document.getElementById("adminbtn").style.visibility = "visible";
+        } else {
+            document.getElementById("adminbtn").style.visibility = "hidden";
+        }
     };
 
     window.onscroll = function () {
@@ -144,7 +164,13 @@ const Shrinknav = (props) => {
                         <li><a href="#specialdraws" className="mynavlinks nav-link px-2">SPECIAL DRAWS</a></li>
                         </ul>
                     </div> */}
+
+                    
+
                     <div id="btnholder" className="btn-adjust">
+                    <div id="adminbtn">
+                        <button className="mybtn btn-warning2 px-4 py-2">admin Panel</button>
+                    </div>
                         <button className="mybtn btn-warning2 px-4 py-2" onClick={connectWalletPressed}>
                             {walletAddress.length > 0 ? (
                                 "Account: " +
@@ -157,8 +183,8 @@ const Shrinknav = (props) => {
                         </button>
                     </div>
                 </div>
-                
-				<div><a href="#home" className="backtotop"><i class="byebye fa-solid fa-arrow-up-from-bracket"></i></a></div>
+
+                <div><a href="#home" className="backtotop"><i class="byebye fa-solid fa-arrow-up-from-bracket"></i></a></div>
 
             </nav>
 

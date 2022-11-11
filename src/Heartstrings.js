@@ -6,16 +6,16 @@ class Heartstrings extends Component {
             <section className="bg_white mypy-6" id="specialdraws">
                 <div className="container px-5 my-5 px-5">
                     <div className="text-center mb-5">
-                        <h2 className="fw-bolder turntextblack">Heart String Testimonials</h2>
+                        <h2 className="fw-bolder turntextblack">Heart Strings Testimonial</h2>
                         <p className="mb-0 justify-content-center turntextblack">Our team loves to hear heart warming messages from our customers <br />Imagine how DCrypto Lottery can change your life too.</p>
                     </div>
                     <div className="row gx-5 justify-content-center">
                         <div className="col-lg-6">
 
-                            <div className="card mb-4" data-aos="fade-right"
+                            <div className="card heartcarddetails mb-4" data-aos="fade-right"
                                 data-aos-offset="200"
                                 data-aos-delay="20"
-                                data-aos-duration="500"
+                                data-aos-duration="800"
                                 data-aos-easing="ease-in-out">
                                 <div className="card-body p-4">
                                     <div className="d-flex">
@@ -28,10 +28,10 @@ class Heartstrings extends Component {
                                 </div>
                             </div>
 
-                            <div className="card mb-4" data-aos="fade-left"
+                            <div className="card heartcarddetails mb-4" data-aos="fade-left"
                                 data-aos-offset="200"
                                 data-aos-delay="20"
-                                data-aos-duration="500"
+                                data-aos-duration="800"
                                 data-aos-easing="ease-in-out">
                                 <div className="card-body p-4">
                                     <div className="d-flex">
