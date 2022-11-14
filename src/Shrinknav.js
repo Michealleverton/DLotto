@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 import {
     connectWallet,
     getCurrentWalletConnected //import here
-} from "./utils/interact.js";
-import logoicon from "./assets/logoicon.gif";
+} from "./utils/interact.js"
+import logoicon from "./assets/logoicon.gif"
 import "./shrinknav.css"
 
 /* ------------------------------------- */
@@ -46,19 +46,19 @@ async function getLocationData() {
         "TR" // Turkey
     ]
 
-    const api_url = process.env.REACT_APP_IPINFO_API_TOKEN;
-    const request = await fetch(api_url);
-    const data = await request.json();
+    const api_url = process.env.REACT_APP_IPINFO_API_TOKEN
+    const request = await fetch(api_url)
+    const data = await request.json()
 
     if (blacklist_countries.includes(data.country)) {
         // If the visitors ip country code is in blacklist this will redirect them to the 
         // access denied page
-        window.location.href = "https://restrictcustomers.netlify.app";
+        window.location.href = "https://restrictcustomers.netlify.app"
         // display_access_denied_error() // Access denied error
     }
 }
 
-getLocationData();
+getLocationData()
 
 // function show_hide() 
 // {
@@ -75,22 +75,22 @@ getLocationData();
 const Shrinknav = (props) => {
 
     //State variables
-    const [walletAddress, setWallet] = useState("");
-    const [, setStatus] = useState("");
+    const [walletAddress, setWallet] = useState("")
+    const [, setStatus] = useState("")
 
     function addWalletListener() {
         if (window.ethereum) {
             window.ethereum.on("accountsChanged", (accounts) => {
                 if (accounts.length > 0) {
-                    setWallet(accounts[0]);
-                    setStatus("👆🏽 Write a message in the text-field above.");
-                    sessionStorage.setItem("address connected", accounts[0]);
-                    localStorage.setItem("address connected", accounts[0]);
-                    sessionStorage.removeItem("verification");
-                    window.location.reload();
+                    setWallet(accounts[0])
+                    setStatus("👆🏽 Write a message in the text-field above.")
+                    sessionStorage.setItem("address connected", accounts[0])
+                    localStorage.setItem("address connected", accounts[0])
+                    sessionStorage.removeItem("verification")
+                    window.location.reload()
                 } else {
-                    setWallet("");
-                    setStatus("🦊 Connect to Metamask using the top right button.");
+                    setWallet("")
+                    setStatus("🦊 Connect to Metamask using the top right button.")
                 }
             });
         } else {
@@ -111,34 +111,34 @@ const Shrinknav = (props) => {
 
     useEffect(() => {
         async function fetchData() {
-            const { address, status } = await getCurrentWalletConnected();
+            const { address, status } = await getCurrentWalletConnected()
             setWallet(address)
-            setStatus(status);
-            addWalletListener();
-            localStorage.setItem("address connected", address);
+            setStatus(status)
+            addWalletListener()
+            localStorage.setItem("address connected", address)
         }
-        fetchData();
-    }, []);
+        fetchData()
+    }, [])
 
     const connectWalletPressed = async () => {
-        const walletResponse = await connectWallet();
-        setStatus(walletResponse.status);
-        setWallet(walletResponse.address);
-        localStorage.setItem("address connected", walletResponse.address);
-        const adminstate = localStorage.getItem("address connected");
+        const walletResponse = await connectWallet()
+        setStatus(walletResponse.status)
+        setWallet(walletResponse.address)
+        localStorage.setItem("address connected", walletResponse.address)
+        const adminstate = localStorage.getItem("address connected")
         if (adminstate === process.env.REACT_APP_OWNER) {
-            document.getElementById("adminbtn").style.visibility = "visible";
+            document.getElementById("adminbtn").style.visibility = "visible"
         } else {
-            document.getElementById("adminbtn").style.visibility = "hidden";
+            document.getElementById("adminbtn").style.visibility = "hidden"
         }
     };
 
     window.onscroll = function () {
-        var nav = document.getElementById('navbar');
+        var nav = document.getElementById('navbar')
         if (window.pageYOffset > 50) {
-            nav.classList.add("scrollNav");
+            nav.classList.add("scrollNav")
         } else {
-            nav.classList.remove("scrollNav");
+            nav.classList.remove("scrollNav")
         }
     }
 
@@ -167,9 +167,9 @@ const Shrinknav = (props) => {
 
                     
 
-                    <div id="btnholder" className="btn-adjust">
+                    <div id="btnholder" className="btn-adjust gap-md-3">
                     <div id="adminbtn">
-                        <button className="mybtn btn-warning2 px-4 py-2">admin Panel</button>
+                        <button className="mybtn btn-warning2 px-4 py-2" type="button"><a className="btncleanlinks" href="http://localhost:3001/">admin Panel</a></button>
                     </div>
                         <button className="mybtn btn-warning2 px-4 py-2" onClick={connectWalletPressed}>
                             {walletAddress.length > 0 ? (

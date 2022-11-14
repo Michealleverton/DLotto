@@ -3,7 +3,7 @@
   --site-light-blue: rgb(190, 206, 237);
   --sitegreytrans: #38384c00;
   --sitegrey: #38384c;
-  --color-b: rgb(0, 0, 0);
+  --color-b: black;
   --color-w: #fff;
   --color-r: rgb(255, 0, 0);
   --color-y: rgb(245, 245, 9);
@@ -774,6 +774,15 @@ a.cleanlinks {
 
 a.cleanlinks:hover {
   color: #ffffff;
+}
+
+a.btncleanlinks {
+  color: black;
+  text-decoration: none;
+}
+
+a.btncleanlinks:hover {
+  color: #000000;
 }
 
 a.mynavlinks:link {
