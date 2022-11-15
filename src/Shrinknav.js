@@ -125,12 +125,6 @@ const Shrinknav = (props) => {
         setStatus(walletResponse.status)
         setWallet(walletResponse.address)
         localStorage.setItem("address connected", walletResponse.address)
-        const adminstate = localStorage.getItem("address connected")
-        if (adminstate === process.env.REACT_APP_OWNER) {
-            document.getElementById("adminbtn").style.visibility = "visible"
-        } else {
-            document.getElementById("adminbtn").style.visibility = "hidden"
-        }
     };
 
     window.onscroll = function () {
@@ -143,6 +137,20 @@ const Shrinknav = (props) => {
     }
 
     // Navbar html to display App itmes
+
+    const [toggle, setToggle] = useState(false)
+    const [walletconnect, setWalletconnect] = useState('')
+
+    const handleClick = () => {
+        setWalletconnect(process.env.REACT_APP_OWNER)
+
+        if (walletconnect === walletAddress) {
+            setToggle(!toggle);
+        }else{
+            console.log("You are not authorized")
+        }
+        
+    };
 
     return (
         <section className="fixed-top px-5 bg_blue bottomblackline myshadow-lg" >
@@ -165,13 +173,23 @@ const Shrinknav = (props) => {
                         </ul>
                     </div> */}
 
-                    
+
 
                     <div id="btnholder" className="btn-adjust gap-md-3">
-                    <div id="adminbtn">
-                        <button className="mybtn btn-warning2 px-4 py-2" type="button"><a className="btncleanlinks" href="http://localhost:3001/">admin Panel</a></button>
-                    </div>
-                        <button className="mybtn btn-warning2 px-4 py-2" onClick={connectWalletPressed}>
+
+                        <div style={{ display: toggle ? 'block' : 'none' }}>
+                        <button className="mybtn btn-warning2 px-4 py-2" type="button">
+                            <a className="btncleanlinks" href="http://localhost:3001/">
+                                admin Panel
+                            </a>
+                        </button>
+                        </div>
+
+                        <button className="mybtn btn-warning2 px-4 py-2"
+                            onClick={() => {
+                                handleClick()
+                                connectWalletPressed()
+                            }}>
                             {walletAddress.length > 0 ? (
                                 "Account: " +
                                 String(walletAddress).substring(0, 6) +
@@ -184,7 +202,7 @@ const Shrinknav = (props) => {
                     </div>
                 </div>
 
-                <div><a href="#home" className="backtotop"><i class="byebye fa-solid fa-arrow-up-from-bracket"></i></a></div>
+                <div><a href="#home" className="backtotop"><i className="byebye fa-solid fa-arrow-up-from-bracket"></i></a></div>
 
             </nav>
 
