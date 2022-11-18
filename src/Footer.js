@@ -21,6 +21,9 @@ const Footer = () => {
             <a href='https://youtube.com'>
               <i className="fa-brands fa-youtube"></i>
             </a>
+            <a href='https://youtube.com'>
+            <i class="fa-sharp fa-solid fa-sun "></i>
+            </a>
           </div>
 
           <p className=" text-center text-white">

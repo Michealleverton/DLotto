@@ -4,7 +4,7 @@ import './index.css';
 class Info extends Component {
     render() {
         return (
-            <section className="bg_grey text-white" id="myinfo">
+            <section className="greygradiant text-white" id="myinfo">
 
                 <div className="container px-5 pb-6">
                     <div className="row gx-5 margin_move_up">

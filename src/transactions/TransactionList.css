@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #38384c;
+    background-color: #38384c00;
     color: white;
     margin-left: 7rem;
     margin-right: 7rem;
@@ -20,7 +20,7 @@
     justify-content: space-between;
     margin-right: 2rem;
     padding: 1rem;
-    background-color: #38384c;
+    /* background-color: #38384c; */
     border-radius: 1rem;
     border-color: rgba(255, 255, 255, 0.215);
     border-style: solid;
