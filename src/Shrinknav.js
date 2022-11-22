@@ -199,6 +199,8 @@ const Shrinknav = (props) => {
                                 <span>Connect Wallet</span>
                             )}
                         </button>
+                        <div>
+                        </div>
                     </div>
                 </div>
 

@@ -8988,6 +8988,8 @@ fieldset:disabled .btn {
 
 .rounded-2 {
   border-radius: 0.25rem !important;
+  border-style: solid;
+  border-color: #000;
 }
 
 .rounded-3 {

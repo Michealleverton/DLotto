@@ -632,6 +632,11 @@ h1.outline-1 {
 
 .switch {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
   background: #3e2f93;
 }
 
