@@ -33,6 +33,37 @@
         "anonymous": false,
         "inputs": [
             {
+                "indexed": true,
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "receiver",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "ticketnum",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+            }
+        ],
+        "name": "GiftGiven",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
                 "indexed": false,
                 "internalType": "address",
                 "name": "account",
@@ -40,6 +71,50 @@
             }
         ],
         "name": "Paused",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "requestId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256[]",
+                "name": "randomWords",
+                "type": "uint256[]"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "payment",
+                "type": "uint256"
+            }
+        ],
+        "name": "RequestFulfilled",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "requestId",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint32",
+                "name": "numWords",
+                "type": "uint32"
+            }
+        ],
+        "name": "RequestSent",
         "type": "event"
     },
     {
@@ -124,6 +199,19 @@
         "type": "event"
     },
     {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "lottonum",
+                "type": "uint256"
+            }
+        ],
+        "name": "ticketnumber",
+        "type": "event"
+    },
+    {
         "stateMutability": "payable",
         "type": "fallback"
     },
@@ -157,6 +245,19 @@
     },
     {
         "inputs": [],
+        "name": "freePlayCount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
         "name": "getBalance",
         "outputs": [
             {
@@ -176,6 +277,35 @@
                 "internalType": "address payable[]",
                 "name": "",
                 "type": "address[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_requestId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getRequestStatus",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "paid",
+                "type": "uint256"
+            },
+            {
+                "internalType": "bool",
+                "name": "fulfilled",
+                "type": "bool"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "randomWords",
+                "type": "uint256[]"
             }
         ],
         "stateMutability": "view",
@@ -221,6 +351,19 @@
                 "internalType": "address payable",
                 "name": "",
                 "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "lastRequestId",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
             }
         ],
         "stateMutability": "view",
@@ -320,17 +463,17 @@
     {
         "inputs": [
             {
-                "internalType": "bytes32",
-                "name": "requestId",
-                "type": "bytes32"
+                "internalType": "uint256",
+                "name": "_requestId",
+                "type": "uint256"
             },
             {
-                "internalType": "uint256",
-                "name": "randomness",
-                "type": "uint256"
+                "internalType": "uint256[]",
+                "name": "_randomWords",
+                "type": "uint256[]"
             }
         ],
-        "name": "rawFulfillRandomness",
+        "name": "rawFulfillRandomWords",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
@@ -344,15 +487,9 @@
     },
     {
         "inputs": [],
-        "name": "ticketcount",
-        "outputs": [
-            {
-                "internalType": "uint256",
-                "name": "",
-                "type": "uint256"
-            }
-        ],
-        "stateMutability": "view",
+        "name": "withdrawLink",
+        "outputs": [],
+        "stateMutability": "nonpayable",
         "type": "function"
     },
     {

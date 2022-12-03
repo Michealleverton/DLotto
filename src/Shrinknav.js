@@ -60,18 +60,6 @@ async function getLocationData() {
 
 getLocationData()
 
-// function show_hide() 
-// {
-//     if(adminstate == "REACT_APP_OWNER") 
-//     {
-//         document.getElementById(adminbtn).style.display="inline";
-//         adminstate = "";
-//     }else{
-//         document.getElementById(adminbtn).style.display="none";
-//         adminstate = localStorage.getItem("address connected");
-//     }
-// }
-
 const Shrinknav = (props) => {
 
     //State variables
@@ -125,6 +113,7 @@ const Shrinknav = (props) => {
         setStatus(walletResponse.status)
         setWallet(walletResponse.address)
         localStorage.setItem("address connected", walletResponse.address)
+        setGateKeeping(1)
     };
 
     window.onscroll = function () {
@@ -140,16 +129,19 @@ const Shrinknav = (props) => {
 
     const [toggle, setToggle] = useState(false)
     const [walletconnect, setWalletconnect] = useState('')
+    // this is a state used on first connect so that the admin button doesn't appear
+    // on the first click of the connect button to connect to wallet for first time
+    const [gateKeeping, setGateKeeping] = useState(0)
 
     const handleClick = () => {
         setWalletconnect(process.env.REACT_APP_OWNER)
 
         if (walletconnect === walletAddress) {
             setToggle(!toggle);
-        }else{
+        } else {
             console.log("You are not authorized")
         }
-        
+
     };
 
     return (
@@ -178,16 +170,18 @@ const Shrinknav = (props) => {
                     <div id="btnholder" className="btn-adjust gap-md-3">
 
                         <div style={{ display: toggle ? 'block' : 'none' }}>
-                        <button className="mybtn btn-warning2 px-4 py-2" type="button">
-                            <a className="btncleanlinks" href="http://localhost:3001/">
-                                admin Panel
-                            </a>
-                        </button>
+                            <button className="mybtn btn-warning2 px-4 py-2" type="button">
+                                <a className="btncleanlinks" href="http://localhost:3001/">
+                                    admin Panel
+                                </a>
+                            </button>
                         </div>
 
                         <button className="mybtn btn-warning2 px-4 py-2"
                             onClick={() => {
-                                handleClick()
+                                if (gateKeeping === 1) {
+                                    handleClick()
+                                }
                                 connectWalletPressed()
                             }}>
                             {walletAddress.length > 0 ? (

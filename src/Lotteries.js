@@ -516,7 +516,7 @@ const Lotteries = () => {
 						<img alt="" src={clipart1126634} />
 						<h2>Age Verification!</h2>
 						<p>By clicking "OK" below you are agreeing that you are of age to enter into a lottery and of age to gamble.</p>
-						<div><input type="checkbox" id="myCheck" className="texboxlarger"></input>  Don't Ask Me Again.</div>
+						{/* <div><input type="checkbox" id="myCheck" className="texboxlarger"></input>  Don't Ask Me Again.</div>
 						<button
 							type="submit"
 							className="popbutton"
@@ -534,6 +534,16 @@ const Lotteries = () => {
 								ODclosepopup();
 								SetconfirmatointoSessionStorage();
 								BuyODTicket();
+							}}>
+							OK
+						</button> */}
+						<button
+							type="submit"
+							className="popbutton"
+							onClick={() => {
+								ODclosepopup();
+								SetconfirmatointoSessionStorage();
+								BuyTDTicket();
 							}}>
 							OK
 						</button>
