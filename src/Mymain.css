@@ -19,6 +19,22 @@
   }
 }
 
+.blueline {
+  border: 3px dashed blue;
+}
+.redline {
+  border: 3px dashed red;
+}
+.greenline {
+  border: 3px dashed green;
+}
+.yellowline {
+  border: 3px dashed yellow;
+}
+.orangeline {
+  border: 3px dashed orange;
+}
+
 /* scrollbar appearance */
 
 ::-webkit-scrollbar {
@@ -134,7 +150,7 @@
   .wavebacking {
     background: url("./assets/ticketwavve.png");
     background-repeat: no-repeat;
-    background-size: 50% 50%;
+    background-size: 100% 75%;
   }
 }
 
