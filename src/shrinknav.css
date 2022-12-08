@@ -34,6 +34,26 @@ img.logo {
     border-bottom: 0.1875em solid rgba(0, 0, 0, 0.539);
 }
 
+img.Gift {
+    height: 6rem;
+    transition: 0.75s;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    img.logo {
+        height: 80px;
+        padding: 8px;
+        background: #352882;
+        border-bottom: 0.1875em solid rgba(0, 0, 0, 0.539);
+    }
+    .nav-content {
+        width: 100vw;
+        padding: 0 25px;
+        display: flex;
+    }
+}
+
 nav.scrollNav img.logo {
     height: 80px;
     padding: 8px;
@@ -69,14 +89,14 @@ div.btn-adjust {
     display: flex;
     width: 50rem;
     align-items: center;
-    justify-content:right;
+    justify-content: right;
 }
 
 nav.scrollNav .btn-adjust {
     display: flex;
     width: 50rem;
     align-items: center;
-    justify-content:right;
+    justify-content: right;
 }
 
 a.backtotop {
@@ -87,7 +107,7 @@ a.backtotop {
     display: flex;
     position: fixed;
     padding-top: 1rem;
-    top:725px;
+    top: 725px;
     bottom: 0;
     left: 46%;
     font-size: 28px;
@@ -96,7 +116,7 @@ a.backtotop {
     border-radius: 50%;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
     transition: 0.65s;
-    z-index:1000;
+    z-index: 1000;
     visibility: hidden;
 }
 
@@ -105,7 +125,7 @@ nav.scrollNav .backtotop {
     width: 100px;
     display: flex;
     position: fixed;
-    top:725px;
+    top: 725px;
     bottom: 0;
     left: 46%;
     font-size: 36px;
@@ -128,4 +148,11 @@ nav.scrollNav .byebye {
 
 .adminbtn {
     margin-right: 1rem;
+}
+
+.Gift {
+    position: absolute;
+    /* display: none; */
+    top: 0px;
+    right: 25px;
 }

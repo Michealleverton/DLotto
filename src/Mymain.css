@@ -139,6 +139,9 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#38384c", endColorstr="#38384c", GradientType=1);
 }
 
+.fillspace {
+  width: 100vw;
+}
 
 .wavebacking {
   background: url("./assets/ticketwavve.png");
@@ -997,6 +1000,7 @@ a.mynavlinks:active {
 }
 
 .mybar {
+  position: relative;
   overflow: hidden;
   justify-content: center;
   align-items: center;

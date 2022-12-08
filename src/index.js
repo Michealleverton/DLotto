@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
+
 const client = new ApolloClient({
   uri: "https://api.thegraph.com/subgraphs/name/michealleverton/testmachine",
   cache: new InMemoryCache(),
@@ -16,4 +17,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-

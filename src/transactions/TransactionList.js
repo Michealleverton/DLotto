@@ -1,11 +1,15 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { ethers } from 'ethers'
 import { useQuery, gql } from "@apollo/client"
 import "./TransactionList.css"
 
-const userconnected = localStorage.getItem("address connected")
+export default function TransactionList(z) {
 
-const GET_TRANSACTIONS = gql`
+    const [viewtransactionsfrom, setTransactions] = useState('0xCA5480152F30BCF9d147E0fcdfdF865EB5995e05')
+
+    const userconnected = localStorage.getItem("address connected")
+
+    const GET_OD_TRANSACTIONS = gql`
     query {
         transferReceiveds(skip: 0, first: 4, orderBy: timestamp, orderDirection: desc, where: {from: "${userconnected}"}) {
             id
@@ -24,9 +28,7 @@ const GET_TRANSACTIONS = gql`
     }
 `
 
-export default function TransactionList() {
-
-    const { error, data, loading } = useQuery(GET_TRANSACTIONS)
+    const { error, data, loading } = useQuery(GET_OD_TRANSACTIONS)
 
     console.log({ error, loading, data })
 
@@ -39,12 +41,44 @@ export default function TransactionList() {
 
     if (error) return <div className='text-white'>something went wrong</div>
 
+    function ODticketselect() {
+        setTransactions(process.env.REACT_APP_ODCONTRACT_ADDRESS)
+        document.getElementById("ticketheader").innerHTML = "One Dollar Tickets"
+    }
+
+    function TDticketselect() {
+        setTransactions(process.env.REACT_APP_TDCONTRACT_ADDRESS)
+        document.getElementById("ticketheader").innerHTML = "Two Dollar Tickets"
+    }
+
+    function FFticketselect() {
+        setTransactions(process.env.REACT_APP_FFCONTRACT_ADDRESS)
+        document.getElementById("ticketheader").innerHTML = "Fifty Fifty Tickets"
+    }
+
+    function SHIBticketselect() {
+        setTransactions(process.env.REACT_APP_SHIBACONTRACT_ADDRESS)
+        document.getElementById("ticketheader").innerHTML = "Shiba Burn Tickets"
+    }
+
+    console.log(viewtransactionsfrom)
     return (
         <section id="mytickets">
             <div className="TransactionList pb-5">
 
                 <div className="container text-center pb-4 pt-5">
-                    <h1 className="fw-bolder text-center text-white mb-4">Your Tickets</h1>
+                    <h1 className="fw-bolder text-center text-white mb-4" id='ticketheader'>One Dollar Tickets</h1>
+
+                    <div className="dropdown mb-3">
+                        <button className="dropbtn">&nbsp;Select a Lottery&nbsp;</button>
+                        <div className="dropdown-content">
+                            <a href="#/" onClick={ODticketselect}>One Dollar</a>
+                            <a href="#/" onClick={TDticketselect}>Two Dollar</a>
+                            <a href="#/" onClick={FFticketselect}>Fifty Fifty</a>
+                            <a href="#/" onClick={SHIBticketselect}>Shiba Burn</a>
+                        </div>
+                    </div>
+
                 </div>
 
                 {data.transferReceiveds.map((transfers) => {
@@ -56,7 +90,7 @@ export default function TransactionList() {
                     var timey = sessionStorage.getItem("Timestamp")
 
                     return (
-                        <div key={transfers.id} className="ticketholder mb-5">
+                        <div key={transfers.id} className="ticketholder">
                             <h6>Transaction: ‎
                                 <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.id.substring(0, 66)}`}>
                                     {transfers.id.substring(0, 10)} ...

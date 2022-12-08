@@ -5,6 +5,7 @@ import {
 } from "./utils/interact.js"
 import logoicon from "./assets/logoicon.gif"
 import "./shrinknav.css"
+import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.gif'
 
 /* ------------------------------------- */
 /* ACCESS DENIED BY BLOCKED COUNTRY LIST */
@@ -149,10 +150,10 @@ const Shrinknav = (props) => {
 
             <nav id="navbar">
                 <div className="nav-content">
-                    <div>
-                        <img alt="" className="logo" src={logoicon} />
+                    <div>                    
+                        <a href='#/'><img alt="" className="logo" src={logoicon} /></a>
                     </div>
-                    <div className="ms-4 mr_auto">
+                    <div className="ms-4 mr_auto fillspace">
                         <h2 className="companyname-adjust mb-0 display-6 fw-bolder">Decentraliz Lottery<br /></h2>
                         <p className="slogan-adjust mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
                     </div>
@@ -167,7 +168,7 @@ const Shrinknav = (props) => {
 
 
 
-                    <div id="btnholder" className="btn-adjust gap-md-3">
+                    <div id="btnholder" className="btn-adjust gap-md-1">
 
                         <div style={{ display: toggle ? 'block' : 'none' }}>
                             <button className="mybtn btn-warning2 px-4 py-2" type="button">
@@ -176,7 +177,7 @@ const Shrinknav = (props) => {
                                 </a>
                             </button>
                         </div>
-
+                        <div><img alt="" className="Gift" src={Gift} /></div>
                         <button className="mybtn btn-warning2 px-4 py-2"
                             onClick={() => {
                                 if (gateKeeping === 1) {

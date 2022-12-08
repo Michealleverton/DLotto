@@ -48,9 +48,9 @@ function App() {
             </div> */}
             
             <div className="pb-2">
-              <i class="fa-sharp fa-solid fa-sun social-media-icons-white-switch"></i>
+              <i className="fa-sharp fa-solid fa-sun social-media-icons-white-switch"></i>
               <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
-              <i class="fa-sharp fa-solid fa-moon social-media-icons-white-switch"></i>
+              <i className="fa-sharp fa-solid fa-moon social-media-icons-white-switch"></i>
             </div>
           </div>
         </div>
