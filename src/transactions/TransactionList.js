@@ -3,9 +3,9 @@ import { ethers } from 'ethers'
 import { useQuery, gql } from "@apollo/client"
 import "./TransactionList.css"
 
-export default function TransactionList(z) {
+export default function TransactionList() {
 
-    const [viewtransactionsfrom, setTransactions] = useState('0xCA5480152F30BCF9d147E0fcdfdF865EB5995e05')
+    const [viewtransactionsfrom, setTransactions] = useState('0x31Cf2B41083003A66A2d10724956014D398d51f0')
 
     const userconnected = localStorage.getItem("address connected")
 

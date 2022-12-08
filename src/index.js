@@ -5,7 +5,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 
 const client = new ApolloClient({
-  uri: "https://api.thegraph.com/subgraphs/name/michealleverton/testmachine",
+  uri: "https://api.thegraph.com/subgraphs/name/michealleverton/tdticketv2",
   cache: new InMemoryCache(),
 });
 

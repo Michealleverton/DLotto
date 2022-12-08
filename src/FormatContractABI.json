@@ -15,12 +15,18 @@
             },
             {
                 "indexed": true,
+                "internalType": "address",
+                "name": "contractfrom",
+                "type": "address"
+            },
+            {
+                "indexed": true,
                 "internalType": "uint256",
                 "name": "lottonum",
                 "type": "uint256"
             },
             {
-                "indexed": true,
+                "indexed": false,
                 "internalType": "uint256",
                 "name": "timestamp",
                 "type": "uint256"
@@ -128,6 +134,12 @@
             },
             {
                 "indexed": true,
+                "internalType": "address",
+                "name": "contractfrom",
+                "type": "address"
+            },
+            {
+                "indexed": true,
                 "internalType": "uint256",
                 "name": "amount",
                 "type": "uint256"
@@ -139,7 +151,7 @@
                 "type": "uint256"
             },
             {
-                "indexed": true,
+                "indexed": false,
                 "internalType": "uint256",
                 "name": "timestamp",
                 "type": "uint256"
@@ -155,6 +167,12 @@
                 "indexed": true,
                 "internalType": "address",
                 "name": "from",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "contractfrom",
                 "type": "address"
             },
             {
@@ -176,7 +194,7 @@
                 "type": "uint256"
             },
             {
-                "indexed": true,
+                "indexed": false,
                 "internalType": "uint256",
                 "name": "timestamp",
                 "type": "uint256"
