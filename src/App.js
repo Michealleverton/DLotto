@@ -1,7 +1,5 @@
 import './Mymain.css';
 import './styles.css';
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 // import Listofplayers from './Listofplayers'
 // import Mynav from './Mynav'
 import Shrinknav from './Shrinknav'
@@ -16,6 +14,12 @@ import Singlewave from "./waveseporator/Singlewave"
 // import Whitesteps from './waveseporator/Whitesteps'
 import { createContext, useState } from "react"
 import ReactSwitch from "react-switch"
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+
+const client = new ApolloClient({
+  uri: `https://api.thegraph.com/subgraphs/name/michealleverton/odticketv2`,
+  cache: new InMemoryCache(),
+});
 
 export const ThemeContext = createContext(null)
 
@@ -27,34 +31,36 @@ function App() {
   }
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="mybar" id={theme}>
+      <ApolloProvider client={client}>
+        <div className="mybar" id={theme}>
 
-        {/* <Mynav /> */}
-        <Shrinknav />
-        {/* <Listofplayers /> */}
-        <Shibacontent />
-        <Info />
-        <Lotteries />
-        <TransactionList />
-        {/* <Whitesteps /> */}
-        <Singlewave />
-        <Heartstrings />
-        <Waveseperator />
-        <Footer />
-        <div className="switch">
-          <div>
-            {/* <div>
+          {/* <Mynav /> */}
+          <Shrinknav />
+          {/* <Listofplayers /> */}
+          <Shibacontent />
+          <Info />
+          <Lotteries />
+          <TransactionList />
+          {/* <Whitesteps /> */}
+          <Singlewave />
+          <Heartstrings />
+          <Waveseperator />
+          <Footer />
+          <div className="switch">
+            <div>
+              {/* <div>
               <label className="text-white p-2"> {theme === "light" ? "Light Mode" : "Dark Mode"} </label>
             </div> */}
-            
-            <div className="pb-2">
-              <i className="fa-sharp fa-solid fa-sun social-media-icons-white-switch"></i>
-              <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
-              <i className="fa-sharp fa-solid fa-moon social-media-icons-white-switch"></i>
+
+              <div className="pb-2">
+                <i className="fa-sharp fa-solid fa-sun social-media-icons-white-switch"></i>
+                <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+                <i className="fa-sharp fa-solid fa-moon social-media-icons-white-switch"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </ApolloProvider>
     </ThemeContext.Provider>
   );
 }

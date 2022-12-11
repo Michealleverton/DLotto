@@ -5,7 +5,7 @@ import "./TransactionList.css"
 
 export default function TransactionList() {
 
-    const [viewtransactionsfrom, setTransactions] = useState('0x31Cf2B41083003A66A2d10724956014D398d51f0')
+    const [viewtransactionsfrom, setTransactions] = useState('0xB954343f87e77B5e846446BB1167C1e5cf35DF2C')
 
     const userconnected = localStorage.getItem("address connected")
 
@@ -14,16 +14,20 @@ export default function TransactionList() {
         transferReceiveds(skip: 0, first: 4, orderBy: timestamp, orderDirection: desc, where: {from: "${userconnected}"}) {
             id
             from
+            contractfrom
             amount
             lottonum
             timestamp
+            transactionHash
         }
 
         freePlays(skip: 0, first: 4, orderBy: timestamp, orderDirection: desc, where: {receiver: "${userconnected}"}) {
             id
             receiver
+            contractfrom
             lottonum
             timestamp
+            transactionHash
   }
     }
 `
@@ -86,14 +90,14 @@ export default function TransactionList() {
                     var s = new Date(transfers.timestamp * 1000).toLocaleDateString("en-US")
                     const test = new Date(s)
                     const year = new Date(s)
-                    sessionStorage.setItem("Timestamp", (test.getDate()) + "/" + (test.getMonth() + 1) + "/" + year.getFullYear())
+                    sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate()) + "/" + year.getFullYear())
                     var timey = sessionStorage.getItem("Timestamp")
 
                     return (
                         <div key={transfers.id} className="ticketholder">
                             <h6>Transaction: ‎
-                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.id.substring(0, 66)}`}>
-                                    {transfers.id.substring(0, 10)} ...
+                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
+                                    {transfers.transactionHash.substring(0, 10)} ...
                                 </a>
                             </h6>
 
@@ -113,14 +117,14 @@ export default function TransactionList() {
                     var s = new Date(freeplay.timestamp * 1000).toLocaleDateString("en-US")
                     const test = new Date(s)
                     const year = new Date(s)
-                    sessionStorage.setItem("Timestamp", (test.getDate() + 1) + "/" + (test.getMonth() + 1) + "/" + year.getFullYear())
+                    sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate() + 1) + "/" + year.getFullYear())
                     var timey = sessionStorage.getItem("Timestamp")
 
                     return (
                         <div key={freeplay.id} className="ticketholder text-white mb-5">
                             <h6>Transaction: ‎
-                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.id.substring(0, 66)}`}>
-                                    {freeplay.id.substring(0, 10)} ...
+                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>
+                                    {freeplay.transactionHash.substring(0, 10)} ...
                                 </a>
                             </h6>
 
