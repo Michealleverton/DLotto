@@ -47,7 +47,6 @@ export default function TransactionList() {
     function ODticketselect() {
 
         localStorage.setItem("Transaction Title", "One Dollar Tickets")
-        localStorage.setItem("lottonumber", 1)
         localStorage.setItem("Api Node", "odticketv2")
         setTransactions(process.env.REACT_APP_ODCONTRACT_ADDRESS)
         window.location.reload()
@@ -57,7 +56,6 @@ export default function TransactionList() {
     function TDticketselect() {
 
         localStorage.setItem("Transaction Title", "Two Dollar Tickets")
-        localStorage.setItem("lottonumber", 2)
         localStorage.setItem("Api Node", "tdticketv2")
         setTransactions(process.env.REACT_APP_TDCONTRACT_ADDRESS)
         window.location.reload()
@@ -67,7 +65,6 @@ export default function TransactionList() {
     function FFticketselect() {
 
         localStorage.setItem("Transaction Title", "Fifty Fifty Tickets")
-        localStorage.setItem("lottonumber", 5)
         localStorage.setItem("Api Node", "ffticketv2")
         setTransactions(process.env.REACT_APP_FFCONTRACT_ADDRESS)
         window.location.reload()
@@ -77,7 +74,6 @@ export default function TransactionList() {
     function SHIBticketselect() {
 
         localStorage.setItem("Transaction Title", "Shib Burn Tickets")
-        localStorage.setItem("lottonumber", 6)
         localStorage.setItem("Api Node", "odticketv2")
         setTransactions(process.env.REACT_APP_SHIBACONTRACT_ADDRESS)
         window.location.reload()
