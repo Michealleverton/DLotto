@@ -105,6 +105,7 @@ const Shrinknav = (props) => {
             setStatus(status)
             addWalletListener()
             localStorage.setItem("address connected", address)
+            localStorage.setItem("Api Node", "odticketv2")
         }
         fetchData()
     }, [])
@@ -114,6 +115,7 @@ const Shrinknav = (props) => {
         setStatus(walletResponse.status)
         setWallet(walletResponse.address)
         localStorage.setItem("address connected", walletResponse.address)
+        localStorage.setItem("Api Node", "odticketv2")
         setGateKeeping(1)
     };
 
