@@ -106,6 +106,7 @@ const Shrinknav = (props) => {
             addWalletListener()
             localStorage.setItem("address connected", address)
             localStorage.setItem("Api Node", "odticketv2")
+            localStorage.setItem("Transaction Title", "One Dollar Tickets")
         }
         fetchData()
     }, [])

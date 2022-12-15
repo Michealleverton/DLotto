@@ -119,16 +119,16 @@ export default function TransactionList() {
                         return (
                             <div className='media-element text-white'>
                                 <div key={transfers.id} className="ticketholder">
+                                    <h6>Ticket Number: {transfers.lottonum}</h6>
+                                    <h6>Amount: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
+                                    <h6>Purchased on: {timey}</h6>
                                     <h6>Transaction: ‎
                                         <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
                                             {transfers.transactionHash.substring(0, 10)} ...
                                         </a>
                                     </h6>
 
-                                    <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6>
-                                    <h6>Amount: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
-                                    <h6>Lottery Number: {transfers.lottonum}</h6>
-                                    <h6>Purchased on: {timey}</h6>
+                                    {/* <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6> */}
                                 </div>
                             </div>
                         )
@@ -152,15 +152,16 @@ export default function TransactionList() {
                         return (
                             <div className='media-element text-white'>
                                 <div key={freeplay.id} className="ticketholder text-white">
+                                    <h6>Ticket Number: {freeplay.lottonum}</h6>
+                                    <h6>Amount: FREE</h6>
+                                    <h6>Purchased on: {timey}</h6>
                                     <h6>Transaction: ‎
                                         <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>
                                             {freeplay.transactionHash.substring(0, 10)} ...
                                         </a>
                                     </h6>
 
-                                    <h6>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h6>
-                                    <h6>Lottery Number: {freeplay.lottonum}</h6>
-                                    <h6>Purchased on: {timey}</h6>
+                                    {/* <h6>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h6> */}
                                 </div>
                             </div>
                         );
