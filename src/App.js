@@ -16,7 +16,7 @@ import { createContext, useState } from "react"
 import ReactSwitch from "react-switch"
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
-const apiNode = localStorage.getItem("Api Node")
+const apiNode = localStorage.getItem("Api Node")  
 console.log(apiNode)
 
 const client = new ApolloClient({
