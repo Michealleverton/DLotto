@@ -1,11 +1,43 @@
+/* Scrolling to display all tickets */
+
+.media-scoller {
+  display: grid;
+  gap: .05rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  overflow-x: auto;
+  align-items: center;
+  overscroll-behavior-inline: contain;
+  border-radius: 10px;
+  border-left: 2px solid rgba(0, 0, 0, 1);
+  border-right: 2px solid rgba(0, 0, 0, 1);
+  border-top: 0px;
+  box-shadow: 1px 1px 45px 0px rgb(255, 255, 255);
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.75) inset;
+  margin-bottom: 50px;
+}
+
+.media-element {
+  display: grid;
+  padding: 0.5rem;
+  justify-content: space-around;
+}
+
+.holditall {
+  display: flex;
+
+}
+
+/* first attempt to display info */
+
 .TransactionList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #38384c00;
   color: white;
-  margin-left: 7rem;
-  margin-right: 7rem;
 }
 
 @media (max-width: 768px) {
@@ -17,8 +49,10 @@
 
 .ticketholder {
   background-image: url("../assets/oneDcardbacking.jpg");
+  max-height: 196px;
+  width: 100%;
   justify-content: space-between;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   padding: 1rem;
   /* background-color: #38384c; */
   border-radius: 1rem;

@@ -16,8 +16,11 @@ import { createContext, useState } from "react"
 import ReactSwitch from "react-switch"
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
+const apiNode = localStorage.getItem("Api Node")
+console.log(apiNode)
+
 const client = new ApolloClient({
-  uri: `https://api.thegraph.com/subgraphs/name/michealleverton/odticketv2`,
+  uri: `https://api.thegraph.com/subgraphs/name/michealleverton/${apiNode}`,
   cache: new InMemoryCache(),
 });
 

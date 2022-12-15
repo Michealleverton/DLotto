@@ -389,6 +389,8 @@ const Lotteries = () => {
 	const [FFbalance, setFFbalance] = useState(0);
 	const [accounts, setAccounts] = useState([]);
 
+// TODO: Ok, so determined that this is the color I want to use for comments
+
 	useEffect(() => {
 		const web3 = new Web3(PROVIDER);
 		const ODcontract = new web3.eth.Contract(lottery_ABI, OD_CONTRACT_ADDRESS);
@@ -630,7 +632,7 @@ const Lotteries = () => {
 										<span className="text-muted"> ETH.</span>
 									</div>
 									<div>
-										<p className="display-6 fs-4 text-black">Curent Jackpot : {(ethers.utils.formatEther(ODbalance) / 1000) * 100}</p>
+										<p className="display-6 fs-4 text-black">Curent Jackpot : {((ethers.utils.formatEther(ODbalance) / 1000) * 100).toFixed(5)}</p>
 									</div>
 
 									{/* Fancy timer */}
@@ -689,7 +691,7 @@ const Lotteries = () => {
 										<span className="text-muted"> ETH</span>
 									</div>
 									<div>
-										<p className="display-6 fs-4 text-black">Curent Jackpot : {(ethers.utils.formatEther(TDbalance) / 1000) * 200}</p>
+										<p className="display-6 fs-4 text-black">Curent Jackpot : {((ethers.utils.formatEther(TDbalance) / 1000) * 200).toFixed(5)}</p>
 									</div>
 
 									{/* Fancy timer */}
@@ -749,7 +751,7 @@ const Lotteries = () => {
 										<span className="text-muted"> ETH</span>
 									</div>
 									<div>
-										<p className="display-6 fs-4 text-black">Curent Jackpot : {(ethers.utils.formatEther(FFbalance) / 1000) * 500}</p>
+										<p className="display-6 fs-4 text-black">Curent Jackpot : {((ethers.utils.formatEther(FFbalance) / 1000) * 500).toFixed(5)}</p>
 									</div>
 
 									{/* Fancy timer */}
