@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.8f657e4a.js",
-    "static/js/787.e6273d85.chunk.js": "/static/js/787.e6273d85.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.01593cef.chunk.css",
+    "main.js": "/static/js/main.6b951583.chunk.js",
+    "main.js.map": "/static/js/main.6b951583.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2f673808.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2f673808.js.map",
+    "static/js/2.232f3301.chunk.js": "/static/js/2.232f3301.chunk.js",
+    "static/js/2.232f3301.chunk.js.map": "/static/js/2.232f3301.chunk.js.map",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.8f657e4a.js.map": "/static/js/main.8f657e4a.js.map",
-    "787.e6273d85.chunk.js.map": "/static/js/787.e6273d85.chunk.js.map"
+    "static/css/main.01593cef.chunk.css.map": "/static/css/main.01593cef.chunk.css.map",
+    "static/js/2.232f3301.chunk.js.LICENSE.txt": "/static/js/2.232f3301.chunk.js.LICENSE.txt",
+    "static/media/clipart1126634.4f16077e.png": "/static/media/clipart1126634.4f16077e.png",
+    "static/media/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.068b7809.gif": "/static/media/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.068b7809.gif",
+    "static/media/logoicon.27e06efa.gif": "/static/media/logoicon.27e06efa.gif",
+    "static/media/Mymain.css": "/static/media/ticketwavve.620bbf3e.png",
+    "static/media/TransactionList.css": "/static/media/oneDcardbacking.076603ae.jpg",
+    "static/media/steptohearts3.8290e720.png": "/static/media/steptohearts3.8290e720.png"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8f657e4a.js"
+    "static/js/runtime-main.2f673808.js",
+    "static/js/2.232f3301.chunk.js",
+    "static/css/main.01593cef.chunk.css",
+    "static/js/main.6b951583.chunk.js"
   ]
 }

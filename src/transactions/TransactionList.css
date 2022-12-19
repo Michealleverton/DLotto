@@ -4,7 +4,7 @@
   display: grid;
   gap: .05rem;
   grid-auto-flow: column;
-  grid-auto-columns: 23%;
+  grid-auto-columns: 300px;
   overflow-x: auto;
   align-items: center;
   overscroll-behavior-inline: contain;
@@ -17,6 +17,10 @@
   -webkit-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.75) inset;
   -moz-box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.75) inset;
   margin-bottom: 50px;
+  width: max-content;
+  max-width: 1272px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .media-element {
@@ -28,6 +32,17 @@
 .holditall {
   display: flex;
 
+}
+
+.testcontain {
+  position: relative;
+  width:fit-content;
+}
+
+.ticket_bg_img {
+  background: url('../assets/blockchain.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* first attempt to display info */

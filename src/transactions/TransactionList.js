@@ -84,24 +84,25 @@ export default function TransactionList() {
 
     console.log(viewtransactionsfrom)
     return (
-        <section id="mytickets">
-          
+        <section className='' id="mytickets">
+
             <div className="container text-center pt-5">
-                    <h1 className="fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>
+                <h1 className="fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>
 
-                    <div className="dropdown mb-3">
-                        <button className="dropbtn">&nbsp;Select a Lottery&nbsp;</button>
-                        <div className="dropdown-content">
-                            <a href="#/" onClick={ODticketselect}>One Dollar</a>
-                            <a href="#/" onClick={TDticketselect}>Two Dollar</a>
-                            <a href="#/" onClick={FFticketselect}>Fifty Fifty</a>
-                            <a href="#/" onClick={SHIBticketselect}>Shiba Burn</a>
-                        </div>
+                <div className="dropdown mb-3">
+                    <button className="dropbtn">&nbsp;Select a Lottery&nbsp;</button>
+                    <div className="dropdown-content">
+                        <a href="#/" onClick={ODticketselect}>One Dollar</a>
+                        <a href="#/" onClick={TDticketselect}>Two Dollar</a>
+                        <a href="#/" onClick={FFticketselect}>Fifty Fifty</a>
+                        <a href="#/" onClick={SHIBticketselect}>Shiba Burn</a>
                     </div>
-
                 </div>
 
+            </div>
+
             <div className='container'>
+
                 <div className='media-scoller'>
 
                     {data.transferReceiveds.map((transfers) => {
@@ -116,7 +117,7 @@ export default function TransactionList() {
                             <div className='media-element text-white'>
                                 <div key={transfers.id} className="ticketholder">
                                     <h6>Ticket Number: {transfers.lottonum}</h6>
-                                    <h6>Amount: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
+                                    <h6>Cost: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
                                     <h6>Purchased on: {timey}</h6>
                                     <h6>Transaction: ‎
                                         <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
@@ -149,7 +150,7 @@ export default function TransactionList() {
                             <div className='media-element text-white'>
                                 <div key={freeplay.id} className="ticketholder text-white">
                                     <h6>Ticket Number: {freeplay.lottonum}</h6>
-                                    <h6>Amount: FREE</h6>
+                                    <h6>Cost: FREE</h6>
                                     <h6>Purchased on: {timey}</h6>
                                     <h6>Transaction: ‎
                                         <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>
