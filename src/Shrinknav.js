@@ -175,7 +175,7 @@ const Shrinknav = (props) => {
 
                         <div style={{ display: toggle ? 'block' : 'none' }}>
                             <button className="mybtn btn-warning2 px-4 py-2" type="button">
-                                <a className="btncleanlinks" href="http://localhost:3001/">
+                                <a className="btncleanlinks" href="https://lottoadmin.netlify.app/">
                                     admin Panel
                                 </a>
                             </button>
