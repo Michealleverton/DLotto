@@ -5,7 +5,7 @@ import {
 } from "./utils/interact.js"
 import logoicon from "./assets/logoicon.gif"
 import "./shrinknav.css"
-import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.gif'
+// import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.gif'
 
 /* ------------------------------------- */
 /* ACCESS DENIED BY BLOCKED COUNTRY LIST */
@@ -160,16 +160,6 @@ const Shrinknav = (props) => {
                         <h2 className="companyname-adjust mb-0 display-6 fw-bolder">Decentraliz Lottery<br /></h2>
                         <p className="slogan-adjust mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
                     </div>
-                    {/* <div>
-                        <ul>
-                        <li><a href="#home" className="mynavlinks nav-link px-2">HOME</a></li>
-                        <li><a href="#tickets" className="mynavlinks nav-link px-2">TICKETS</a></li>
-                        <li><a href="#mytickets" className="mynavlinks nav-link px-2">MY TICKETS</a></li>
-                        <li><a href="#specialdraws" className="mynavlinks nav-link px-2">SPECIAL DRAWS</a></li>
-                        </ul>
-                    </div> */}
-
-
 
                     <div id="btnholder" className="btn-adjust gap-md-1">
 
@@ -180,7 +170,7 @@ const Shrinknav = (props) => {
                                 </a>
                             </button>
                         </div>
-                        <div><img alt="" className="Gift" src={Gift} /></div>
+                        {/* <div><img alt="" className="Gift" src={Gift} /></div> */}
                         <button className="mybtn btn-warning2 px-4 py-2"
                             onClick={() => {
                                 if (gateKeeping === 1) {

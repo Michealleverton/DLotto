@@ -135,7 +135,7 @@ export default function TransactionList() {
                 </div>
             </div>
 
-            <h1 className="fw-bolder text-center text-white mb-4">Free Play Tickets</h1>
+            <h1 className="fw-bolder text-center text-white mb-4">Free Tickets</h1>
             <div className='container'>
                 <div className='media-scoller'>
 

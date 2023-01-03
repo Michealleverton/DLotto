@@ -1,17 +1,20 @@
 import React from 'react';
+import './tooltip.css'
 
 function Tooltip() {
 
-    function myFunction() {
-        var tt = document.getElementById("tooltipdemo")
-        tt.classList.toggle("show")
+    function showCopied() {
+        let selectButton = document.querySelector(".copycontractaddress");
+        selectButton.classList.add("active");
+        setTimeout(function () {
+            selectButton.classList.remove("active");
+        }, 1500)
     }
 
     return (
-        <button class="arrowpopup" onClick={() => { myFunction() }}>
-            Tooltip Demo Click here!
-            <span class="tooltiptext" id="tooltipdemo">HTML Tooltip helps you to display extra information of element.</span>
-        </button>
+        <div className="copycontractaddress">
+            <button value="copy" onClick={() => { showCopied() }} id="copy-text-btn"><i class="fa-regular fa-circle-info"></i></button>
+        </div>
     )
 }
 
