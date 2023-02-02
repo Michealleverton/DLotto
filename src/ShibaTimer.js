@@ -1,6 +1,6 @@
 
 // Setup End Date for Countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("Jan 4, 2023 21:00:00").getTime();
+let launchDate = new Date("Feb 3, 2023 21:00:00").getTime();
 
 // Setup Timer to tick every 1 second
 setInterval(tick, 1000);
@@ -33,10 +33,10 @@ function tick () {
     if (secs < 10) { secs = "0" + secs; }
     
     // Set time on document
-    document.querySelector('.TDdays').innerText = days;
-    document.querySelector('.TDhours').innerText = hours;
-    document.querySelector('.TDmins').innerText = mins;
-    document.querySelector('.TDsecs').innerText = secs;
+    document.querySelector('.ndays').innerText = days;
+    document.querySelector('.nhours').innerText = hours;
+    document.querySelector('.nmins').innerText = mins;
+    document.querySelector('.nsecs').innerText = secs;
   }
 }
 

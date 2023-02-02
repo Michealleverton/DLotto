@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Web3 from 'web3';
 import clipart1126634 from "./assets/clipart1126634.png";
-import "./countdownTimer";
+import "./ShibaTimer";
 
 const lottery_ABI = [
 	{

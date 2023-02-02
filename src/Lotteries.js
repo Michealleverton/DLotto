@@ -2,9 +2,9 @@ import { React, useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Web3 from 'web3';
 import clipart1126634 from "./assets/clipart1126634.png";
-import "./ODcountdownTimer";
-import "./TDcountdownTimer";
-import "./FFcountdownTimer";
+import "./SundayTimer";
+import "./WednesdayTimer";
+import "./FridayTimer";
 
 const lottery_ABI = [
 	{
@@ -518,27 +518,7 @@ const Lotteries = () => {
 						<img alt="" src={clipart1126634} />
 						<h2>Age Verification!</h2>
 						<p>By clicking "OK" below you are agreeing that you are of age to enter into a lottery and of age to gamble.</p>
-						{/* <div><input type="checkbox" id="myCheck" className="texboxlarger"></input>  Don't Ask Me Again.</div>
-						<button
-							type="submit"
-							className="popbutton"
-							onClick={() => {
-
-								var checkBox = document.getElementById("myCheck");
-
-								// If the checkbox is checked, display the output text
-								if (checkBox.checked === true) {
-									localStorage.setItem("verification", "Agreed");
-								} else {
-									console.log("User didn't check the box");
-								}
-
-								ODclosepopup();
-								SetconfirmatointoSessionStorage();
-								BuyODTicket();
-							}}>
-							OK
-						</button> */}
+						
 						<button
 							type="submit"
 							className="popbutton"
