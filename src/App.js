@@ -15,6 +15,7 @@ import Singlewave from "./waveseporator/Singlewave"
 import { createContext, useState } from "react"
 import ReactSwitch from "react-switch"
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
+import Lottery from './Lottery';
 
 const apiNode = localStorage.getItem("Api Node")
 console.log(apiNode)
@@ -49,6 +50,7 @@ function App() {
           <Heartstrings />
           <Waveseperator />
           <Footer />
+          <Lottery />
           <div className="switch">
             <div>
               {/* <div>

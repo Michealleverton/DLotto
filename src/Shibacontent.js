@@ -858,7 +858,7 @@ const Shibacontent = () => {
 					<p></p>
 				</div>
 
-				
+
 			</header>
 		</section>
 	)
