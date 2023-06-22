@@ -6,7 +6,7 @@ function Lottery() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const chosenNumbers = numbers.split(',').map((number) => parseInt(number.trim(), 10));
+    // const chosenNumbers = numbers.split(',').map((number) => parseInt(number.trim(), 10));
     // Generate random lottery numbers here
     // Compare the chosen numbers with the random numbers to determine if the user has won
   };

@@ -15,7 +15,6 @@ import Singlewave from "./waveseporator/Singlewave"
 import { createContext, useState } from "react"
 import ReactSwitch from "react-switch"
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
-import Lottery from './Lottery';
 
 const apiNode = localStorage.getItem("Api Node")
 console.log(apiNode)
@@ -50,14 +49,13 @@ function App() {
           <Heartstrings />
           <Waveseperator />
           <Footer />
-          <Lottery />
           <div className="switch">
             <div>
               {/* <div>
               <label className="text-white p-2"> {theme === "light" ? "Light Mode" : "Dark Mode"} </label>
             </div> */}
 
-              <div className="pb-2">
+              <div className="">
                 <i className="fa-sharp fa-solid fa-sun social-media-icons-white-switch"></i>
                 <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
                 <i className="fa-sharp fa-solid fa-moon social-media-icons-white-switch"></i>

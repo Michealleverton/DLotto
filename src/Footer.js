@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <section id="footer">
-      <footer className="py-4 bg_blue">
+      <footer className="py-1 bg_blue">
         <div className="container px-5">
           <div className='singlecol social-media-icons-white d-flex justify-content-evenly pt-2 pb-4'>
             <a href='https://facebook.com'>
