@@ -84,7 +84,7 @@ export default function TransactionList() {
 
     console.log(viewtransactionsfrom)
     return (
-        <section className='' id="mytickets">
+        <section className='minfoholder' id="mytickets">
 
             <div className="container text-center pt-5">
                 <h1 className="fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>

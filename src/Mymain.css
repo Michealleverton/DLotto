@@ -637,12 +637,23 @@ h1.outline-1 {
   }
 }
 
+.coininfo {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: solid 2px rgba(255, 255, 255, 0.231);
+}
+
 .maininfo {
   position: relative;
   margin-top: 4rem;
   height: 51.5rem;
   background: url("../src/assets/lottery_home_page_04_5.gif") no-repeat center;
   margin-bottom: 0;
+}
+
+.minfoholder {
+  margin-top: 0rem;
 }
 
 .goaway {
@@ -1127,4 +1138,9 @@ a.mynavlinks:active {
 
 .spaceme {
   margin-top: 20px;
+}
+
+.infocontainer {
+  padding-top: 125px;
+  padding-bottom: 50px;
 }
