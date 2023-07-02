@@ -5,7 +5,7 @@ import "./TransactionList.css"
 
 export default function TransactionList() {
 
-    const [viewtransactionsfrom, setTransactions] = useState('0xB954343f87e77B5e846446BB1167C1e5cf35DF2C')
+    const [viewtransactionsfrom, setTransactions] = useState('')
     const userconnected = localStorage.getItem("address connected")
 
     const GET_OD_TRANSACTIONS = gql`
@@ -89,7 +89,7 @@ export default function TransactionList() {
             <div className="container text-center pt-5">
                 <h1 className="fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>
 
-                <div className="dropdown mb-3">
+                <div className="dropdown mb-4">
                     <button className="dropbtn">&nbsp;Select a Lottery&nbsp;</button>
                     <div className="dropdown-content">
                         <a href="#/" onClick={ODticketselect}>One Dollar</a>
@@ -103,7 +103,14 @@ export default function TransactionList() {
 
             <div className='container'>
 
+                <div className='nodata'>
+                    {userconnected
+                        ? ``
+                        : "No Tickets to View"}
+                </div>
+
                 <div className='media-scoller'>
+
 
                     {data.transferReceiveds.map((transfers) => {
 
@@ -137,7 +144,15 @@ export default function TransactionList() {
 
             <h1 className="fw-bolder text-center text-white mb-4">Free Tickets</h1>
             <div className='container'>
+
+                <div className='nodata'>
+                    {userconnected
+                        ? ``
+                        : "No Tickets to View"}
+                </div>
+
                 <div className='media-scoller'>
+
 
                     {data.freePlays.map((freeplay) => {
                         var s = new Date(freeplay.timestamp * 1000).toLocaleDateString("en-US")

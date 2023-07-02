@@ -1144,3 +1144,11 @@ a.mynavlinks:active {
   padding-top: 125px;
   padding-bottom: 50px;
 }
+
+.nodata {
+  text-align: center;
+  color: #f8f8f8;
+  font-size:larger;
+  font-weight: 600container;
+  text-transform: uppercase;
+}
