@@ -3,7 +3,7 @@ import {
     connectWallet,
     getCurrentWalletConnected //import here
 } from "./utils/interact.js"
-import logoicon from "./assets/logoicon.gif"
+import logoicon from "./assets/logoicon10.gif"
 import "./shrinknav.css"
 // import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.gif'
 
@@ -164,14 +164,14 @@ const Shrinknav = (props) => {
                     <div id="btnholder" className="btn-adjust gap-md-1">
 
                         <div style={{ display: toggle ? 'block' : 'none' }}>
-                            <button className="mybtn btn-warning2 px-4 py-2" type="button">
+                            <button className="dropbtn px-4 py-2 mt-3" type="button">
                                 <a className="btncleanlinks" href="https://lottoadmin.netlify.app/">
                                     admin Panel
                                 </a>
                             </button>
                         </div>
                         {/* <div><img alt="" className="Gift" src={Gift} /></div> */}
-                        <button className="mybtn btn-warning2 px-4 py-2"
+                        <button className="dropbtn px-4 py-2 mt-3"
                             onClick={() => {
                                 if (gateKeeping === 1) {
                                     handleClick()

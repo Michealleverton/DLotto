@@ -15,20 +15,20 @@ class Info extends Component {
                             <div className=""><img alt="" className="coininfo" src={coininfo} /></div>
                             <h2 className="display-5 fs-3 text-white">Supported Coins</h2>
                             <p>
-We chose Ethereum for our lotteries due to the abundance of coins. Special lotteries like the Shiba Inu Coin Burn require spending specific tokens for ticket purchase.</p>
+                                We chose Ethereum for purchasing tickets, but our team plans to incorporate other coins. Special lotteries like the Shiba Inu Burn require spending specific tokens for ticket purchase.</p>
 
                         </div>
                         <div className="col-lg-4 mb-5 mb-lg-0">
                             <div className=""><img alt="" className="coininfo" src={oddsinfo} /></div>
                             <h2 className="display-5 fs-3 text-white">Odds Of Winning</h2>
-                            <p>Dcrypto Lottery offers incredible winning odds compared to standard lotteries, as your chances increase with the number of tickets sold.</p>
+                            <p>Our Lottery offers incredible winning odds compared to standard lotteries, as your chances increase with the number of tickets sold.</p>
 
                         </div>
                         <div className="col-lg-4">
                             <div className=""><img alt="" className="coininfo" src={ticketsinfo} /></div>
                             <h2 className="display-5 fs-3 text-white">Free Tickets</h2>
                             <p>
-Free tickets are awarded based on the number of tickets sold in our lottery. Higher-priced tickets increase your chances of winning a free ticket.</p>
+                                Free tickets are awarded based on the number of tickets sold in our lottery. Higher-priced tickets increase your chances of winning a free ticket.</p>
 
                         </div>
                     </div>

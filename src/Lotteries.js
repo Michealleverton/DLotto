@@ -651,7 +651,7 @@ const Lotteries = () => {
 										No <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
 									</li> */}
 									</ul>
-									<div className="d-grid"><button type="submit" onClick={ODopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Ticket</button></div>
+									<div className="d-grid"><button type="submit" onClick={ODopenpopup} className="dropbtn px-4 py-2">Purchase Ticket</button></div>
 								</div>
 							</div>
 						</div>
@@ -710,7 +710,7 @@ const Lotteries = () => {
 										1 <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
 									</li> */}
 									</ul>
-									<div className="d-grid"><button type="submit" onClick={TDopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Tickets</button></div>
+									<div className="d-grid"><button type="submit" onClick={TDopenpopup} className="dropbtn px-4 py-2">Purchase Tickets</button></div>
 								</div>
 							</div>
 						</div>
@@ -770,7 +770,7 @@ const Lotteries = () => {
 										3 <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
 									</li> */}
 									</ul>
-									<div className="d-grid"><button type="submit" onClick={FFopenpopup} className="mybtn btn-warning2 px-4 py-2">Purchase Ticket</button></div>
+									<div className="d-grid"><button type="submit" onClick={FFopenpopup} className="dropbtn px-4 py-2">Purchase Ticket</button></div>
 								</div>
 							</div>
 						</div>

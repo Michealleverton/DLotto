@@ -99,18 +99,20 @@
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #4c54af;
-  color: white;
+  background-color: #edda0b;
+  color: #323232;
   font-size: 16px;
+  font-weight: 600;
   border: none;
   cursor: pointer;
   margin-bottom: 1rem;
 }
 
 .dropbtn:hover {
-  background-color: #4c54af;
-  color: white;
+  background-color: #606ad8;
+  color: #ffffff;
   font-size: 16px;
+  font-weight: 600;
   border: none;
   cursor: pointer;
 }

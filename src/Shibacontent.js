@@ -843,12 +843,12 @@ const Shibacontent = () => {
 					</div>
 
 					<div className=" d-grid gap-3 d-sm-flex justify-content-left">
-						<button type="submit" className="mybtn btn-warning2 px-4 me-sm-3" onClick={openpopup}>BUY A SHIBA BURN TICKET NOW</button>
+						<button type="submit" className="dropbtn px-4 me-sm-3" onClick={openpopup}>BUY A SHIBA BURN TICKET NOW</button>
 						{/* <button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button> */}
 					</div>
 
 					<div>
-						<div className="shibtoburndisplayed shibafterfees pt-4">Shib to Burn: {((ethers.utils.formatEther(Balance) / 1000) * 900).toFixed(2)} / Jackpot: {((ethers.utils.formatEther(Balance) / 1000) * 200).toFixed(2)}</div>
+						<div className="shibtoburndisplayed shibafterfees pt-4">Shib to Burn: {((ethers.utils.formatEther(Balance) / 1000) * 900).toFixed(2)} / Jackpot: {((ethers.utils.formatEther(Balance) / 1000) * 50).toFixed(2)}</div>
 					</div>
 
 				</div>

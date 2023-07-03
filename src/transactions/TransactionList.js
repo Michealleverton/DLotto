@@ -104,10 +104,11 @@ export default function TransactionList() {
             <div className='container'>
 
                 <div className='nodata'>
-                    {userconnected
+                    {userconnected && data.transferReceiveds
                         ? ``
                         : "No Tickets to View"}
                 </div>
+                
 
                 <div className='media-scoller'>
 
@@ -146,7 +147,13 @@ export default function TransactionList() {
             <div className='container'>
 
                 <div className='nodata'>
-                    {userconnected
+                    {userconnected && data.transferReceiveds
+                        ? ``
+                        : "No Tickets to View"}
+                </div>
+
+                <div className='nodata'>
+                    {data.transferReceiveds
                         ? ``
                         : "No Tickets to View"}
                 </div>
