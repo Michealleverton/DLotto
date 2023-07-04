@@ -5,7 +5,7 @@ import {
 } from "./utils/interact.js"
 import logoicon from "./assets/logoicon10.gif"
 import "./shrinknav.css"
-// import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.gif'
+import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.gif'
 
 /* ------------------------------------- */
 /* ACCESS DENIED BY BLOCKED COUNTRY LIST */
@@ -170,7 +170,7 @@ const Shrinknav = (props) => {
                                 </a>
                             </button>
                         </div>
-                        {/* <div><img alt="" className="Gift" src={Gift} /></div> */}
+                        <div><img alt="" className="Gift" src={Gift} /></div>
                         <button className="dropbtn px-4 py-2 mt-3"
                             onClick={() => {
                                 if (gateKeeping === 1) {

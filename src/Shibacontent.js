@@ -815,13 +815,13 @@ const Shibacontent = () => {
 						<div className="col-lg-5">
 							<div className="text-center My-6">
 								<h1 className="display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
-								<h1 className="display-5 fs-3 text-white mb-4">Who Will Be The Lucky Winner</h1>
-								<p className="text-white-shadow mb-5 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
+								<h1 className="display-5 fs-3 text-white mb-2">Who Will Be The Lucky Winner</h1>
+								<p className="text-white-shadow mb-4 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
 							</div>
 						</div>
 					</div>
 					{/* Fancy timer */}
-					<div className="timecontainer mb-3">
+					<div className="timecontainer mb-4">
 						<div className="counter">
 							<div className="time days">
 								<p className="para-big ndays">00</p>
