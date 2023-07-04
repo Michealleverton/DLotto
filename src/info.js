@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import coininfo from "./assets/coininfo2.png"
-import oddsinfo from "./assets/oddsinfo.png"
-import ticketsinfo from "./assets/ticketinfo.png"
+import coininfo from "./assets/coininfo2.gif"
+import oddsinfo from "./assets/coininfo.gif"
+import ticketsinfo from "./assets/ticketinfo.gif"
 import './index.css';
 
 class Info extends Component {

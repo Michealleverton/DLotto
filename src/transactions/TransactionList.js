@@ -75,7 +75,7 @@ export default function TransactionList() {
 
         localStorage.setItem("Transaction Title", "Shib Burn Tickets")
         localStorage.setItem("Api Node", "odticketv2")
-        setTransactions(process.env.REACT_APP_SHIBACONTRACT_ADDRESS)
+        setTransactions(process.env.REACT_APP_LTT_TOKEN_CONTRACTADDRESS)
         window.location.reload()
         // document.getElementById("ticketheader").innerHTML = "Shiba Burn Tickets"
     }
@@ -103,42 +103,48 @@ export default function TransactionList() {
 
             <div className='container'>
 
-                <div className='nodata'>
-                    {userconnected && data.transferReceiveds
-                        ? ``
-                        : "No Tickets to View"}
-                </div>
-                
+                {/* <div className='nodata'>
+                    {userconnected ? `` : "No Tickets to View"}
+                </div> */}
+
 
                 <div className='media-scoller'>
 
 
-                    {data.transferReceiveds.map((transfers) => {
+                    {
+                        data.transferReceiveds[0] && userconnected ? (
+                            data.transferReceiveds.map((transfers) => {
 
-                        var s = new Date(transfers.timestamp * 1000).toLocaleDateString("en-US")
-                        const test = new Date(s)
-                        const year = new Date(s)
-                        sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate()) + "/" + year.getFullYear())
-                        var timey = sessionStorage.getItem("Timestamp")
+                                var s = new Date(transfers.timestamp * 1000).toLocaleDateString("en-US")
+                                const test = new Date(s)
+                                const year = new Date(s)
+                                sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate()) + "/" + year.getFullYear())
+                                var timey = sessionStorage.getItem("Timestamp")
 
-                        return (
-                            <div className='media-element text-white'>
-                                <div key={transfers.id} className="ticketholder">
-                                    <h6>Ticket Number: {transfers.lottonum}</h6>
-                                    <h6>Cost: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
-                                    <h6>Purchased on: {timey}</h6>
-                                    <h6>Transaction: ‎
-                                        <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
-                                            {transfers.transactionHash.substring(0, 10)} ...
-                                        </a>
-                                    </h6>
+                                return (
+                                    <div className='media-element text-white'>
+                                        <div key={transfers.id} className="ticketholder">
+                                            <h6>Ticket Number: {transfers.lottonum}</h6>
+                                            <h6>Cost: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
+                                            <h6>Purchased on: {timey}</h6>
+                                            <h6>Transaction: ‎
+                                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
+                                                    {transfers.transactionHash.substring(0, 10)} ...
+                                                </a>
+                                            </h6>
 
-                                    {/* <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6> */}
+                                            {/* <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6> */}
+                                        </div>
+                                    </div>
+                                )
+
+                            }))
+                            : (
+                                <div className='nodata mt-3'>
+                                    <p>No Tickets to View</p>
                                 </div>
-                            </div>
-                        )
+                            )
                     }
-                    )}
 
                 </div>
             </div>
@@ -146,119 +152,46 @@ export default function TransactionList() {
             <h1 className="fw-bolder text-center text-white mb-4">Free Tickets</h1>
             <div className='container'>
 
-                <div className='nodata'>
-                    {userconnected && data.transferReceiveds
-                        ? ``
-                        : "No Tickets to View"}
-                </div>
-
-                <div className='nodata'>
-                    {data.transferReceiveds
-                        ? ``
-                        : "No Tickets to View"}
-                </div>
-
                 <div className='media-scoller'>
 
 
-                    {data.freePlays.map((freeplay) => {
-                        var s = new Date(freeplay.timestamp * 1000).toLocaleDateString("en-US")
-                        const test = new Date(s)
-                        const year = new Date(s)
-                        sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate() + 1) + "/" + year.getFullYear())
-                        var timey = sessionStorage.getItem("Timestamp")
+                    {
+                        data.freePlays[0] && userconnected ? (
+                            data.freePlays.map((freeplay) => {
+                                var s = new Date(freeplay.timestamp * 1000).toLocaleDateString("en-US")
+                                const test = new Date(s)
+                                const year = new Date(s)
+                                sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate() + 1) + "/" + year.getFullYear())
+                                var timey = sessionStorage.getItem("Timestamp")
 
-                        return (
-                            <div className='media-element text-white'>
-                                <div key={freeplay.id} className="ticketholder text-white">
-                                    <h6>Ticket Number: {freeplay.lottonum}</h6>
-                                    <h6>Cost: FREE</h6>
-                                    <h6>Purchased on: {timey}</h6>
-                                    <h6>Transaction: ‎
-                                        <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>
-                                            {freeplay.transactionHash.substring(0, 10)} ...
-                                        </a>
-                                    </h6>
+                                return (
+                                    <div className='media-element text-white'>
+                                        <div key={freeplay.id} className="ticketholder text-white">
+                                            <h6>Ticket Number: {freeplay.lottonum}</h6>
+                                            <h6>Cost: FREE</h6>
+                                            <h6>Purchased on: {timey}</h6>
+                                            <h6>Transaction: ‎
+                                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>
+                                                    {freeplay.transactionHash.substring(0, 10)} ...
+                                                </a>
+                                            </h6>
 
-                                    {/* <h6>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h6> */}
+                                            {/* <h6>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h6> */}
+                                        </div>
+                                    </div>
+                                )
+
+                            }))
+                            : (
+                                <div className='nodata mt-3'>
+                                    <p>No Tickets to View</p>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            )
+                    }
 
                 </div>
             </div>
 
-
-
-            {/* <div className="TransactionList">
-
-                <div className="container text-center pb-4 pt-5">
-                    <h1 className="fw-bolder text-center text-white mb-4" id='ticketheader'>One Dollar Tickets</h1>
-
-                    <div className="dropdown mb-3">
-                        <button className="dropbtn">&nbsp;Select a Lottery&nbsp;</button>
-                        <div className="dropdown-content">
-                            <a href="#/" onClick={ODticketselect}>One Dollar</a>
-                            <a href="#/" onClick={TDticketselect}>Two Dollar</a>
-                            <a href="#/" onClick={FFticketselect}>Fifty Fifty</a>
-                            <a href="#/" onClick={SHIBticketselect}>Shiba Burn</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                {data.transferReceiveds.map((transfers) => {
-
-                    var s = new Date(transfers.timestamp * 1000).toLocaleDateString("en-US")
-                    const test = new Date(s)
-                    const year = new Date(s)
-                    sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate()) + "/" + year.getFullYear())
-                    var timey = sessionStorage.getItem("Timestamp")
-
-                    return (
-                        <div key={transfers.id} className="ticketholder">
-                            <h6>Transaction: ‎
-                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
-                                    {transfers.transactionHash.substring(0, 10)} ...
-                                </a>
-                            </h6>
-
-                            <h6>Wallet: {transfers.from.substring(0, 6)} ... {transfers.from.substring(38)}</h6>
-                            <h6>Amount: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
-                            <h6>Lottery Number: {transfers.lottonum}</h6>
-                            <h6>Purchased on: {timey}</h6>
-                        </div>
-                    )
-                }
-                )}
-
-                <div className="container text-center text-white pb-5 pt-5">
-                    <h1 className="fw-bolder text-center text-white">Free Play Tickets</h1>
-                </div>
-                {data.freePlays.map((freeplay) => {
-                    var s = new Date(freeplay.timestamp * 1000).toLocaleDateString("en-US")
-                    const test = new Date(s)
-                    const year = new Date(s)
-                    sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate() + 1) + "/" + year.getFullYear())
-                    var timey = sessionStorage.getItem("Timestamp")
-
-                    return (
-                        <div key={freeplay.id} className="ticketholder text-white mb-5">
-                            <h6>Transaction: ‎
-                                <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>
-                                    {freeplay.transactionHash.substring(0, 10)} ...
-                                </a>
-                            </h6>
-
-                            <h6>Wallet: {freeplay.receiver.substring(0, 6)} ... {freeplay.receiver.substring(38)}</h6>
-                            <h6>Lottery Number: {freeplay.lottonum}</h6>
-                            <h6>Purchased on: {timey}</h6>
-                        </div>
-                    );
-                })}
-
-            </div> */}
         </section>
     )
 }

@@ -122,6 +122,10 @@
 
 /* end of loader */
 
+.headersize {
+  font-size: 42px;
+}
+
 #light {
   background-color: #38384c !important;
 }

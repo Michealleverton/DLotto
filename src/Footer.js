@@ -6,19 +6,19 @@ const Footer = () => {
       <footer className="py-1 bg_blue">
         <div className="container px-5">
           <div className='singlecol social-media-icons-white d-flex justify-content-evenly pt-2 pb-4'>
-            <a href='https://facebook.com'>
+            <a href='https://facebook.com'aria-label="Social Media Link">
               <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href='https://instagram.com'>
+            <a href='https://instagram.com'aria-label="Social Media Link">
               <i className="fa-brands fa-instagram"></i>
             </a>
-            <a href='https://twitter.com'>
+            <a href='https://twitter.com'aria-label="Social Media Link">
               <i className="fa-brands fa-twitter"></i>
             </a>
-            <a href='https://tiktok.com'>
+            <a href='https://tiktok.com'aria-label="Social Media Link">
               <i className="fa-brands fa-tiktok"></i>
             </a>
-            <a href='https://youtube.com'>
+            <a href='https://youtube.com' aria-label="Social Media Link">
               <i className="fa-brands fa-youtube"></i>
             </a>
           </div>

@@ -593,7 +593,7 @@ const Lotteries = () => {
 					</div>
 
 					<div className="text-center">
-						<h1 className="fw-bolder text-center text-white mb-5">Ticket Options</h1>
+						<p className="headersize fw-bolder text-center text-white mb-5">Ticket Options</p>
 					</div>
 					<div className="row justify-content-center">
 
@@ -605,7 +605,7 @@ const Lotteries = () => {
 							<div className="card ticketdetails mb-5 mb-xl-0">
 								<div className="card-body p-4">
 									<div className="text-primary text-uppercase fw-bold">
-										<h6 className="display-6 fs-4 text-black">Sunday Draw</h6>
+										<p className="headersize display-6 fs-4 text-black">Sunday Draw</p>
 									</div>
 									<div className="mb-3">
 										<span className="display-4 fw-bold">$1</span>
@@ -664,7 +664,7 @@ const Lotteries = () => {
 							<div className="card ticketdetails mb-5 mb-xl-0">
 								<div className="card-body p-4">
 									<div className="small text-primary text-uppercase fw-bold">
-										<h6 className="display-6 fs-4 text-black">Wednesday Draw</h6>
+										<p className="headersize display-6 fs-4 text-black">Wednesday Draw</p>
 									</div>
 									<div className="mb-3">
 										<span className="display-4 fw-bold">$2</span>
@@ -723,7 +723,7 @@ const Lotteries = () => {
 							<div className="card ticketdetails mb-5 mb-xl-0">
 								<div className="card-body p-4">
 									<div className="small text-primary text-uppercase fw-bold mb-2">
-										<h6 className="display-6 fs-4 text-black">50/50 Fridays</h6>
+										<p className="headersize display-6 fs-4 text-black">50/50 Fridays</p>
 									</div>
 
 									<div className="mb-3">

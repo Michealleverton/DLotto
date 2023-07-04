@@ -57,7 +57,7 @@ function App() {
 
               <div className="">
                 <i className="fa-sharp fa-solid fa-sun social-media-icons-white-switch"></i>
-                <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+                <ReactSwitch aria-label="Light and dark mode switch" onChange={toggleTheme} checked={theme === "dark"} />
                 <i className="fa-sharp fa-solid fa-moon social-media-icons-white-switch"></i>
               </div>
             </div>
