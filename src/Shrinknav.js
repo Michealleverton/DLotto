@@ -5,7 +5,7 @@ import {
 } from "./utils/interact.js"
 import logoicon from "./assets/logoicon10.gif"
 import "./shrinknav.css"
-import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly.gif'
+import Gift from './assets/emoji-3d icons-glossy-3d-icons-moving-gift-72dpi-forPersonalUseOnly2.gif'
 
 /* ------------------------------------- */
 /* ACCESS DENIED BY BLOCKED COUNTRY LIST */
@@ -157,12 +157,13 @@ const Shrinknav = (props) => {
                         <a href='#/' aria-label="Social Media Link"><img alt="" className="logo" src={logoicon} /></a>
                     </div>
                     <div className="ms-4 mr_auto fillspace">
-                        <h2 className="companyname-adjust mb-0 display-6 fw-bolder">Decentraliz Lottery<br /></h2>
-                        <p className="slogan-adjust mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery You Need</p>
+                        <h2 className="headerSpacing companyname-adjust mb-0 display-6 fw-bolder">Decentraliz Lottery<br /></h2>
+                        <p className="textBodySpacing slogan-adjust mt-0 mb-2 sitelightblue textleft">The Only Crypto Lottery</p>
                     </div>
 
                     <div id="btnholder" className="btn-adjust gap-md-1">
 
+                    <button className="textBodySpacing dropbtn px-4 py-2 mt-3">Login</button>
                         <div style={{ display: toggle ? 'block' : 'none' }}>
                             <button className="dropbtn px-4 py-2 mt-3" type="button">
                                 <a className="btncleanlinks" href="https://lottoadmin.netlify.app/">
@@ -171,7 +172,7 @@ const Shrinknav = (props) => {
                             </button>
                         </div>
                         <div><img alt="" className="Gift" src={Gift} /></div>
-                        <button className="dropbtn px-4 py-2 mt-3"
+                        <button className="textBodySpacing dropbtn px-4 py-2 mt-3"
                             onClick={() => {
                                 if (gateKeeping === 1) {
                                     handleClick()

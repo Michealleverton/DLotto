@@ -75,8 +75,8 @@
 }
 
 .spinnerpadding {
-  margin-left: 45vw;
-  margin-bottom: 100px;
+  margin-left: 46vw;
+  margin-bottom: 50px;
   margin-top: 100px;
 }
 
@@ -122,9 +122,29 @@
 
 /* end of loader */
 
+/* Letter spacing and line heights */
+
 .headersize {
   font-size: 42px;
 }
+
+.headerSpacing  {
+  letter-spacing: 0.06em;
+}
+
+.titleSpacing  {
+  letter-spacing: 0.04em;
+}
+
+.textBodySpacing  {
+  letter-spacing: 0.04em;
+}
+
+.textBodyLineHeight  {
+  line-height: 1.4;
+}
+
+/* End of letter spacing and line heights */
 
 #light {
   background-color: #38384c !important;

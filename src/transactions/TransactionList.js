@@ -35,14 +35,19 @@ export default function TransactionList() {
 
     console.log({ error, loading, data })
 
-    if (loading) return <div className="loader spinnerpadding">
+    if (loading) return <>
+    <div className="loader spinnerpadding">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
     </div>
+    <div>
+    <h4 className='titleSpacing text-white text-center mb-5'>Loading Your Tickets ...</h4>
+    </div>
+    </>
 
-    if (error) return <div className='text-white'>something went wrong</div>
+    if (error) return <div className='titleSpacing text-white'>something went wrong</div>
 
     function ODticketselect() {
 
@@ -87,10 +92,10 @@ export default function TransactionList() {
         <section className='minfoholder' id="mytickets">
 
             <div className="container text-center pt-5">
-                <h1 className="fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>
+                <h1 className="headerSpacing fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>
 
                 <div className="dropdown mb-4">
-                    <button className="dropbtn">&nbsp;Select a Lottery&nbsp;</button>
+                    <button className="textBodySpacing dropbtn">&nbsp;Select a Lottery&nbsp;</button>
                     <div className="dropdown-content">
                         <a href="#/" onClick={ODticketselect}>One Dollar</a>
                         <a href="#/" onClick={TDticketselect}>Two Dollar</a>
@@ -124,12 +129,12 @@ export default function TransactionList() {
                                 return (
                                     <div className='media-element text-white'>
                                         <div key={transfers.id} className="ticketholder">
-                                            <h6>Ticket Number: {transfers.lottonum}</h6>
-                                            <h6>Cost: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
-                                            <h6>Purchased on: {timey}</h6>
-                                            <h6>Transaction: ‎
+                                            <h6 className='textBodySpacing'>Ticket Number: {transfers.lottonum}</h6>
+                                            <h6 className='textBodySpacing'>Cost: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
+                                            <h6 className='textBodySpacing'>Purchased on: {timey}</h6>
+                                            <h6 className='textBodySpacing'>Transaction: ‎
                                                 <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
-                                                    {transfers.transactionHash.substring(0, 10)} ...
+                                                    {transfers.transactionHash.substring(0, 7)} ...
                                                 </a>
                                             </h6>
 
@@ -140,7 +145,7 @@ export default function TransactionList() {
 
                             }))
                             : (
-                                <div className='nodata mt-3'>
+                                <div className='titleSpacing nodata mt-3'>
                                     <p>No Tickets to View</p>
                                 </div>
                             )
@@ -149,7 +154,7 @@ export default function TransactionList() {
                 </div>
             </div>
 
-            <h1 className="fw-bolder text-center text-white mb-4">Free Tickets</h1>
+            <h1 className="headerSpacing fw-bolder text-center text-white mb-4">Free Tickets</h1>
             <div className='container'>
 
                 <div className='media-scoller'>
@@ -167,12 +172,12 @@ export default function TransactionList() {
                                 return (
                                     <div className='media-element text-white'>
                                         <div key={freeplay.id} className="ticketholder text-white">
-                                            <h6>Ticket Number: {freeplay.lottonum}</h6>
-                                            <h6>Cost: FREE</h6>
-                                            <h6>Purchased on: {timey}</h6>
-                                            <h6>Transaction: ‎
+                                            <h6 className='textBodySpacing'>Ticket Number: {freeplay.lottonum}</h6>
+                                            <h6 className='textBodySpacing'>Cost: FREE</h6>
+                                            <h6 className='textBodySpacing'>Purchased on: {timey}</h6>
+                                            <h6 className='textBodySpacing'>Transaction: ‎
                                                 <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>
-                                                    {freeplay.transactionHash.substring(0, 10)} ...
+                                                    {freeplay.transactionHash.substring(0, 7)} ...
                                                 </a>
                                             </h6>
 

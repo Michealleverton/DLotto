@@ -35,7 +35,7 @@ img.logo {
 }
 
 img.Gift {
-    height: 6rem;
+    height: 5rem;
     transition: 0.75s;
     cursor: pointer;
 }
@@ -153,6 +153,7 @@ nav.scrollNav .byebye {
 .Gift {
     position: absolute;
     /* display: none; */
-    top: 0px;
-    right: 25px;
+    top: 10px;
+    right: 20px;
+    transform: rotate(8deg);
 }

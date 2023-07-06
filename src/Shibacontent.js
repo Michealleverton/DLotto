@@ -813,10 +813,10 @@ const Shibacontent = () => {
 
 					<div className="row gx-5 justify-content-left">
 						<div className="col-lg-5">
-							<div className="text-center My-6">
-								<h1 className="display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
-								<h1 className="display-5 fs-3 text-white mb-2">Who Will Be The Lucky Winner</h1>
-								<p className="text-white-shadow mb-4 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
+							<div className="text-center mt-5">
+								<h1 className="headerSpacing display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
+								<h1 className="titleSpacing display-5 fs-3 text-white mb-2">Who Will Be The Lucky Winner</h1>
+								<p className="textBodyLineHeight textBodySpacing text-white-shadow mb-4 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
 							</div>
 						</div>
 					</div>
@@ -824,31 +824,31 @@ const Shibacontent = () => {
 					<div className="timecontainer mb-4">
 						<div className="counter">
 							<div className="time days">
-								<p className="para-big ndays">00</p>
-								<span className="span-small">Days</span>
+								<p className="textBodySpacing para-big ndays">00</p>
+								<span className="textBodySpacing span-small">Days</span>
 							</div>
 							<div className="time hours">
-								<p className="para-big nhours">00</p>
-								<span className="span-small">Hours</span>
+								<p className="textBodySpacing para-big nhours">00</p>
+								<span className="textBodySpacing span-small">Hours</span>
 							</div>
 							<div className="time min">
-								<p className="para-big nmins">00</p>
-								<span className="span-small">Mins</span>
+								<p className="textBodySpacing para-big nmins">00</p>
+								<span className="textBodySpacing span-small">Mins</span>
 							</div>
 							<div className="time sec">
-								<p className="para-big nsecs">00</p>
-								<span className="span-small">Secs</span>
+								<p className="textBodySpacing para-big nsecs">00</p>
+								<span className="textBodySpacing span-small">Secs</span>
 							</div>
 						</div>
 					</div>
 
 					<div className=" d-grid gap-3 d-sm-flex justify-content-left">
-						<button type="submit" className="dropbtn px-4 me-sm-3" onClick={openpopup}>BUY A SHIBA BURN TICKET NOW</button>
+						<button type="submit" className="textBodySpacing dropbtn px-4" onClick={openpopup}>BUY A SHIBA BURN TICKET NOW</button>
 						{/* <button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button> */}
 					</div>
 
 					<div>
-						<div className="shibtoburndisplayed shibafterfees pt-4">Shib to Burn: {((ethers.utils.formatEther(Balance) / 1000) * 900).toFixed(2)} / Jackpot: {((ethers.utils.formatEther(Balance) / 1000) * 50).toFixed(2)}</div>
+						<div className="heeaderSpacing shibtoburndisplayed shibafterfees pt-4">Shib to Burn: {((ethers.utils.formatEther(Balance) / 1000) * 900).toFixed(2)} / Jackpot: {((ethers.utils.formatEther(Balance) / 1000) * 50).toFixed(2)}</div>
 					</div>
 
 				</div>

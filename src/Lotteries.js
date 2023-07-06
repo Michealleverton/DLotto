@@ -593,7 +593,7 @@ const Lotteries = () => {
 					</div>
 
 					<div className="text-center">
-						<p className="headersize fw-bolder text-center text-white mb-5">Ticket Options</p>
+						<p className="headerSpacing headersize fw-bolder text-center text-white mb-5">Ticket Options</p>
 					</div>
 					<div className="row justify-content-center">
 
@@ -605,53 +605,53 @@ const Lotteries = () => {
 							<div className="card ticketdetails mb-5 mb-xl-0">
 								<div className="card-body p-4">
 									<div className="text-primary text-uppercase fw-bold">
-										<p className="headersize display-6 fs-4 text-black">Sunday Draw</p>
+										<p className="titleSpacing headersize display-6 fs-4 text-black">Sunday Draw</p>
 									</div>
 									<div className="mb-3">
 										<span className="display-4 fw-bold">$1</span>
 										<span className="text-muted"> ETH.</span>
 									</div>
 									<div>
-										<p className="display-6 fs-4 text-black">Curent Jackpot : {((ethers.utils.formatEther(ODbalance) / 1000) * 100).toFixed(5)}</p>
+										<p className="titleSpacing display-6 fs-4 text-black">Current Jackpot : {((ethers.utils.formatEther(ODbalance) / 1000) * 100).toFixed(5)}</p>
 									</div>
 
 									{/* Fancy timer */}
-									<div className="timecontainer mb-4">
+									<div className="timecontainer mb-3">
 										<div className="counter">
 											<div className="time days">
-												<p className="my-para-big OTndays">00</p>
-												<span className="my-span-small">Days</span>
+												<p className="textBodySpacing my-para-big OTndays">00</p>
+												<span className="textBodySpacing my-span-small">Days</span>
 											</div>
 											<div className="time hours">
-												<p className="my-para-big OTnhours">00</p>
-												<span className="my-span-small">Hours</span>
+												<p className="textBodySpacing my-para-big OTnhours">00</p>
+												<span className="textBodySpacing my-span-small">Hours</span>
 											</div>
 											<div className="time min">
-												<p className="my-para-big OTnmins">00</p>
-												<span className="my-span-small">Mins</span>
+												<p className="textBodySpacing my-para-big OTnmins">00</p>
+												<span className="textBodySpacing my-span-small">Mins</span>
 											</div>
 											<div className="time sec">
-												<p className="my-para-big OTnsecs">00</p>
-												<span className="my-span-small">Secs</span>
+												<p className="textBodySpacing my-para-big OTnsecs">00</p>
+												<span className="textBodySpacing my-span-small">Secs</span>
 											</div>
 										</div>
 									</div>
 
 									<ul className="list-unstyled mb-4">
-										<li className="mb-2">
+										<li className="mb-1">
 											<i className="bi bi-check text-success iconspacing"></i>
-											<strong className="text-success">Winner Takes 10% of pool</strong>
+											<strong className="textBodySpacing text-success">Winner Takes 10% of pool</strong>
 										</li>
-										<li className="mb-2">
-											<i className="bi bi-check text-success iconspacing"></i>
+										<li className="mb-1">
+											<i className="textBodySpacing bi bi-check text-success iconspacing"></i>
 											100 Free $1 tickets given out
 										</li>
-										{/* <li className="mb-2">
+										<li className="mb-1">
 										<i className="bi bi-x text-danger iconspacing"></i>
-										No <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
-									</li> */}
+										No <a href="#!" className="textBodySpacing goldenticket">Golden ticket's</a> given out
+									</li>
 									</ul>
-									<div className="d-grid"><button type="submit" onClick={ODopenpopup} className="dropbtn px-4 py-2">Purchase Ticket</button></div>
+									<div className="d-grid"><button type="submit" onClick={ODopenpopup} className="textBodySpacing dropbtn px-4 py-2">Purchase Ticket</button></div>
 								</div>
 							</div>
 						</div>
@@ -664,53 +664,53 @@ const Lotteries = () => {
 							<div className="card ticketdetails mb-5 mb-xl-0">
 								<div className="card-body p-4">
 									<div className="small text-primary text-uppercase fw-bold">
-										<p className="headersize display-6 fs-4 text-black">Wednesday Draw</p>
+										<p className="titleSpacing headersize display-6 fs-4 text-black">Wednesday Draw</p>
 									</div>
 									<div className="mb-3">
 										<span className="display-4 fw-bold">$2</span>
 										<span className="text-muted"> ETH</span>
 									</div>
 									<div>
-										<p className="display-6 fs-4 text-black">Curent Jackpot : {((ethers.utils.formatEther(TDbalance) / 1000) * 200).toFixed(5)}</p>
+										<p className="titleSpacing display-6 fs-4 text-black">Current Jackpot : {((ethers.utils.formatEther(TDbalance) / 1000) * 200).toFixed(5)}</p>
 									</div>
 
 									{/* Fancy timer */}
-									<div className="timecontainer mb-4">
+									<div className="timecontainer mb-3">
 										<div className="counter">
 											<div className="time days">
-												<p className="my-para-big TDdays">00</p>
-												<span className="my-span-small">Days</span>
+												<p className="textBodySpacing my-para-big TDdays">00</p>
+												<span className="textBodySpacing my-span-small">Days</span>
 											</div>
 											<div className="time hours">
-												<p className="my-para-big TDhours">00</p>
-												<span className="my-span-small">Hours</span>
+												<p className="textBodySpacing my-para-big TDhours">00</p>
+												<span className="textBodySpacing my-span-small">Hours</span>
 											</div>
 											<div className="time min">
-												<p className="my-para-big TDmins">00</p>
-												<span className="my-span-small">Mins</span>
+												<p className="textBodySpacing my-para-big TDmins">00</p>
+												<span className="textBodySpacing my-span-small">Mins</span>
 											</div>
 											<div className="time sec">
-												<p className="my-para-big TDsecs">00</p>
-												<span className="my-span-small">Secs</span>
+												<p className="textBodySpacing my-para-big TDsecs">00</p>
+												<span className="textBodySpacing my-span-small">Secs</span>
 											</div>
 										</div>
 									</div>
 
 									<ul className="list-unstyled mb-4">
-										<li className="mb-2">
+										<li className="mb-1">
 											<i className="bi bi-check text-success iconspacing"></i>
-											<strong className="text-success">Winner Takes 20% of pool</strong>
+											<strong className="textBodySpacing text-success">Winner Takes 20% of pool</strong>
 										</li>
-										<li className="mb-2">
-											<i className="bi bi-check text-success iconspacing"></i>
+										<li className="mb-1">
+											<i className="textBodySpacing bi bi-check text-success iconspacing"></i>
 											250 Free $2 tickets given out
 										</li>
-										{/* <li className="mb-2">
+										<li className="mb-1">
 										<i className="bi bi-gem text-primary iconspacing"></i>
-										1 <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
-									</li> */}
+										1 <a href="#!" className="textBodySpacing goldenticket">Golden ticket's</a> given out
+									</li>
 									</ul>
-									<div className="d-grid"><button type="submit" onClick={TDopenpopup} className="dropbtn px-4 py-2">Purchase Tickets</button></div>
+									<div className="d-grid"><button type="submit" onClick={TDopenpopup} className="textBodySpacing dropbtn px-4 py-2">Purchase Tickets</button></div>
 								</div>
 							</div>
 						</div>
@@ -722,8 +722,8 @@ const Lotteries = () => {
 							data-aos-easing="ease-in-out">
 							<div className="card ticketdetails mb-5 mb-xl-0">
 								<div className="card-body p-4">
-									<div className="small text-primary text-uppercase fw-bold mb-2">
-										<p className="headersize display-6 fs-4 text-black">50/50 Fridays</p>
+									<div className="small text-primary text-uppercase fw-bold mb-3">
+										<p className="titleSpacing headersize display-6 fs-4 text-black">50/50 Fridays</p>
 									</div>
 
 									<div className="mb-3">
@@ -731,46 +731,46 @@ const Lotteries = () => {
 										<span className="text-muted"> ETH</span>
 									</div>
 									<div>
-										<p className="display-6 fs-4 text-black">Curent Jackpot : {((ethers.utils.formatEther(FFbalance) / 1000) * 500).toFixed(5)}</p>
+										<p className="titleSpacing display-6 fs-4 text-black mb-3">Current Jackpot : {((ethers.utils.formatEther(FFbalance) / 1000) * 500).toFixed(5)}</p>
 									</div>
 
 									{/* Fancy timer */}
-									<div className="timecontainer mb-4">
+									<div className="timecontainer mb-3">
 										<div className="counter">
 											<div className="time days">
-												<p className="my-para-big FFdays">00</p>
-												<span className="my-span-small">Days</span>
+												<p className="textBodySpacing my-para-big FFdays">00</p>
+												<span className="textBodySpacing my-span-small">Days</span>
 											</div>
 											<div className="time hours">
-												<p className="my-para-big FFhours">00</p>
-												<span className="my-span-small">Hours</span>
+												<p className="textBodySpacing my-para-big FFhours">00</p>
+												<span className="textBodySpacing my-span-small">Hours</span>
 											</div>
 											<div className="time min">
-												<p className="my-para-big FFmins">00</p>
-												<span className="my-span-small">Mins</span>
+												<p className="textBodySpacing my-para-big FFmins">00</p>
+												<span className="textBodySpacing my-span-small">Mins</span>
 											</div>
 											<div className="time sec">
-												<p className="my-para-big FFsecs">00</p>
-												<span className="my-span-small">Secs</span>
+												<p className="textBodySpacing my-para-big FFsecs">00</p>
+												<span className="textBodySpacing my-span-small">Secs</span>
 											</div>
 										</div>
 									</div>
 
 									<ul className="list-unstyled mb-4">
-										<li className="mb-2">
+										<li className="mb-1">
 											<i className="bi bi-check text-success iconspacing"></i>
-											<strong className="text-success">Winner takes 50% of pool</strong>
+											<strong className="textBodySpacing text-success">Winner takes 50% of pool</strong>
 										</li>
-										<li className="mb-2">
-											<i className="bi bi-check text-success iconspacing"></i>
-											500 Free $3 tickets given out
+										<li className="mb-1">
+											<i className="textBodySpacing bi bi-check text-success iconspacing"></i>
+											500 Free $5 tickets given out
 										</li>
-										{/* <li className="mb-2">
-										<i className="bi bi-gem text-primary iconspacing"></i>
-										3 <a href="#!" className="goldenticket">Golden ticket NFT's</a> given out
-									</li> */}
+										<li className="mb-1">
+										<i className="bi bi-check text-primary iconspacing"></i>
+										3 <a href="#!" className="textBodySpacing goldenticket">Golden ticket's</a> given out
+									</li>
 									</ul>
-									<div className="d-grid"><button type="submit" onClick={FFopenpopup} className="dropbtn px-4 py-2">Purchase Ticket</button></div>
+									<div className="d-grid"><button type="submit" onClick={FFopenpopup} className="textBodySpacing dropbtn px-4 py-2">Purchase Ticket</button></div>
 								</div>
 							</div>
 						</div>

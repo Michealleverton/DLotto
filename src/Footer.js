@@ -23,11 +23,8 @@ const Footer = () => {
             </a>
           </div>
 
-          <p className=" text-center text-white">
-            Copyright &copy; Decentraliz Lottery 2022 - All Rights Reserved.
-          </p>
-          <p className=" text-center text-white">
-            <a href='#/'>Terms & Conditions</a>
+          <p className="textBodyLineHeight textBodySpacing text-center text-white">
+            Copyright &copy; Decentraliz Lottery 2022 - All Rights Reserved.<br/><a href='#/'>Terms & Conditions</a>
           </p>
 
         </div>
