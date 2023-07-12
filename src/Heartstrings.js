@@ -6,8 +6,8 @@ class Heartstrings extends Component {
             <section className="bg_white mypy-6" id="specialdraws">
                 <div className="container px-5 my-5 px-5">
                     <div className="text-center mb-5">
-                        <h2 className="titleSpacing fw-bolder turntextblack">Heart Strings Testimonial</h2>
-                        <p className="textBodyLineHeight textBodySpacing mb-0 justify-content-center turntextblack">Our team loves to hear heart warming messages from our customers <br />Imagine how Decentraliz Lottery can change your life too.</p>
+                        <h2 className="titleSpacing fw-bolder turntextblack">Heart String Testimonials</h2>
+                        <p className="textBodyLineHeight textBodySpacing mb-0 justify-content-center turntextblack">Our team loves to hear heart warming messages from our customers. <br />Imagine how Decentraliz Lottery can change your life too.</p>
                     </div>
                     <div className="row gx-5 justify-content-center">
                         <div className="col-lg-6">
@@ -44,7 +44,7 @@ class Heartstrings extends Component {
                                 </div>
                             </div>
                             <div>
-                                <p className="textBodySpacing mt-5 mb-0 text-center justify-content-center turntextblack">* Site just launched, so testimonials are fake for now</p>
+                                <p className="textBodySpacing mt-5 mb-0 text-center justify-content-center turntextblack mb-5">* Site just launched, so testimonials are fake for now</p>
                             </div>
                         </div>
                     </div>

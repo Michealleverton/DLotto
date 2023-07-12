@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { ethers } from 'ethers'
+// import { ethers } from 'ethers'
 import { useQuery, gql } from "@apollo/client"
 import "./TransactionList.css"
 
@@ -92,7 +92,7 @@ export default function TransactionList() {
         <section className='minfoholder' id="mytickets">
 
             <div className="container text-center pt-5">
-                <h1 className="headerSpacing fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>
+                <h1 className="headerSpacing headersize fw-bolder text-center text-white mb-4" id='ticketheader'>{TransactionTitle}</h1>
 
                 <div className="dropdown mb-4">
                     <button className="textBodySpacing dropbtn">&nbsp;Select a Lottery&nbsp;</button>
@@ -130,7 +130,7 @@ export default function TransactionList() {
                                     <div className='media-element text-white'>
                                         <div key={transfers.id} className="ticketholder">
                                             <h6 className='textBodySpacing'>Ticket Number: {transfers.lottonum}</h6>
-                                            <h6 className='textBodySpacing'>Cost: {(ethers.utils.formatEther(transfers.amount))} ETH</h6>
+                                            {/* <h6 className='textBodySpacing'>Cost: {(ethers.utils.formatEther(transfers.amount))} ETH</h6> */}
                                             <h6 className='textBodySpacing'>Purchased on: {timey}</h6>
                                             <h6 className='textBodySpacing'>Transaction: ‎
                                                 <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${transfers.transactionHash}`}>
@@ -154,7 +154,7 @@ export default function TransactionList() {
                 </div>
             </div>
 
-            <h1 className="headerSpacing fw-bolder text-center text-white mb-4">Free Tickets</h1>
+            <h1 className="headerSpacing headersize fw-bolder text-center text-white mb-4">Free Tickets</h1>
             <div className='container'>
 
                 <div className='media-scoller'>
@@ -166,14 +166,14 @@ export default function TransactionList() {
                                 var s = new Date(freeplay.timestamp * 1000).toLocaleDateString("en-US")
                                 const test = new Date(s)
                                 const year = new Date(s)
-                                sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate() + 1) + "/" + year.getFullYear())
+                                sessionStorage.setItem("Timestamp", (test.getMonth() + 1) + "/" + (test.getDate()) + "/" + year.getFullYear())
                                 var timey = sessionStorage.getItem("Timestamp")
 
                                 return (
                                     <div className='media-element text-white'>
                                         <div key={freeplay.id} className="ticketholder text-white">
                                             <h6 className='textBodySpacing'>Ticket Number: {freeplay.lottonum}</h6>
-                                            <h6 className='textBodySpacing'>Cost: FREE</h6>
+                                            {/* <h6 className='textBodySpacing'>Cost: FREE</h6> */}
                                             <h6 className='textBodySpacing'>Purchased on: {timey}</h6>
                                             <h6 className='textBodySpacing'>Transaction: ‎
                                                 <a className="cleanlinks" target="_blank" rel="noreferrer" href={`https://goerli.etherscan.io/tx/${freeplay.transactionHash}`}>

@@ -1,8 +1,8 @@
-import './Mymain.css';
-import './styles.css';
+import './css/Mymain.css';
+import './css/styles.css';
 // import Listofplayers from './Listofplayers'
 // import Mynav from './Mynav'
-import Shrinknav from './Shrinknav'
+import Shrinknav from './navigation/Shrinknav'
 import Shibacontent from "./Shibacontent"
 import Lotteries from "./Lotteries"
 import TransactionList from "./transactions/TransactionList"

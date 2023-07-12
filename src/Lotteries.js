@@ -2,9 +2,9 @@ import { React, useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Web3 from 'web3';
 import clipart1126634 from "./assets/clipart1126634.png";
-import "./SundayTimer";
-import "./WednesdayTimer";
-import "./FridayTimer";
+import "./timers/SundayTimer";
+import "./timers/WednesdayTimer";
+import "./timers/FridayTimer";
 
 const lottery_ABI = [
 	{
@@ -593,11 +593,11 @@ const Lotteries = () => {
 					</div>
 
 					<div className="text-center">
-						<p className="headerSpacing headersize fw-bolder text-center text-white mb-5">Ticket Options</p>
+						<p className="headerSpacing headersize fw-bolder text-center text-white mb-5">Ticket Booth</p>
 					</div>
 					<div className="row justify-content-center">
 
-						<div className="col-lg-6 col-xl-4" data-aos="flip-left"
+						<div className=" col-xl-4" data-aos="flip-left"
 							data-aos-offset="150"
 							data-aos-delay="5"
 							data-aos-duration="500"
@@ -656,7 +656,7 @@ const Lotteries = () => {
 							</div>
 						</div>
 
-						<div className="col-lg-6 col-xl-4" data-aos="zoom-out-up"
+						<div className="col-lg-5 col-xl-4" data-aos="zoom-out-up"
 							data-aos-offset="150"
 							data-aos-delay="5"
 							data-aos-duration="500"
@@ -715,7 +715,7 @@ const Lotteries = () => {
 							</div>
 						</div>
 
-						<div className="col-lg-6 col-xl-4" data-aos="flip-right"
+						<div className="col-lg-5 col-xl-4" data-aos="flip-right"
 							data-aos-offset="150"
 							data-aos-delay="5"
 							data-aos-duration="500"

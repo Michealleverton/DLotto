@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 import Web3 from 'web3';
 import clipart1126634 from "./assets/clipart1126634.png";
-import "./ShibaTimer";
+import "./timers/ShibaTimer";
 
 const lottery_ABI = [
 	{
@@ -769,6 +769,7 @@ const Shibacontent = () => {
 	function handleBuy() {
 		Web3.givenProvider.send('eth_requestAccounts')
 			.then(response => setAccounts(response.result));
+			 
 		const web3 = new Web3(Web3.givenProvider);
 		const tokencontract = new web3.eth.Contract(token_ABI, TOKEN_ADDRESS);
 		const contract = new web3.eth.Contract(lottery_ABI, LOTTERY_ADDRESS);
@@ -814,7 +815,7 @@ const Shibacontent = () => {
 					<div className="row gx-5 justify-content-left">
 						<div className="col-lg-5">
 							<div className="text-center mt-5">
-								<h1 className="headerSpacing display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
+								<h1 className="headersize headerSpacing display-5 fw-bolder text-white mb-3">WIN BIG WITH SHIB</h1>
 								<h1 className="titleSpacing display-5 fs-3 text-white mb-2">Who Will Be The Lucky Winner</h1>
 								<p className="textBodyLineHeight textBodySpacing text-white-shadow mb-4 textleft">In this lottery all tickets costs $2 in Shiba Inu coin. The lottery will run for 7 days ending on Friday. When the week ends there will be a draw and one lucky person will win 5% of the jackpot. After 5% for fees and costs, the remaining 90% of Shiba Inu coins will be burned to get the coins out of circulation.</p>
 							</div>
@@ -844,7 +845,7 @@ const Shibacontent = () => {
 
 					<div className=" d-grid gap-3 d-sm-flex justify-content-left">
 						<button type="submit" className="textBodySpacing dropbtn px-4" onClick={openpopup}>BUY A SHIBA BURN TICKET NOW</button>
-						{/* <button className="mybtn btn-warning2 px-4 py-2" href="#!">MORE DETAILS</button> */}
+						<button className="textBodySpacing dropbtn px-4" href="#!">MORE DETAILS</button>
 					</div>
 
 					<div>
